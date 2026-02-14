@@ -34,3 +34,9 @@ Fixes broken factorio entities
 # Detail to know
 For angels mods i use dev2.0 branch from github. Master branch stuggles for 2 years already
 
+## Disabled things while i dont understand why they need
+
+| file |  name |
+----------------------
+|	KaoExtended/data.lua | Re-enabling bob's alloys |
+|	KaoExtended/data-final-fixes.lua | Re-enabling bob's alloys |

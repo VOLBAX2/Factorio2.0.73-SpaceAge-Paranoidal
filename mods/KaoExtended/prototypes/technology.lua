@@ -22,7 +22,6 @@ bobmods.lib.tech.add_recipe_unlock("advanced-electronics-3", "intelligent-io")
 
 bobmods.lib.tech.add_recipe_unlock("logistic-science-pack", "sci-component-2")
 bobmods.lib.tech.add_recipe_unlock("chemical-science-pack", "sci-component-3")
---bobmods.lib.tech.add_recipe_unlock("advanced-electronics", "sci-component-4")
 
 bobmods.lib.tech.add_recipe_unlock("production-science-pack", "sci-component-5")
 bobmods.lib.tech.add_recipe_unlock("utility-science-pack", "sci-component-4")
@@ -31,18 +30,5 @@ bobmods.lib.tech.add_recipe_unlock("military-science-pack", "sci-component-m")
 bobmods.lib.tech.add_recipe_unlock("advanced-logistic-science-pack", "sci-component-l")
 bobmods.lib.tech.add_recipe_unlock("advanced-electronics", "sci-component-o")
 
---было
---bobmods.lib.tech.add_recipe_unlock("advanced-electronics-3", "advsci-component-3")
---bobmods.lib.tech.add_recipe_unlock("advanced-electronics-4", "advsci-component-4")
-
--- стало
 bobmods.lib.tech.add_recipe_unlock("advanced-electronics", "advsci-component-3")
 bobmods.lib.tech.add_recipe_unlock("advanced-electronics-2", "advsci-component-4")
-
---[[
-  data.raw.technology["water-miner-1"] = nil
-  data.raw.technology["water-miner-2"] = nil
-  data.raw.technology["water-miner-3"] = nil
-  data.raw.technology["water-miner-4"] = nil
-  data.raw.technology["water-miner-5"] = nil
-  ]]--

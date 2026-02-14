@@ -27,7 +27,7 @@ require("prototypes.mining-drill-bit.override")
 
 require("prototypes.recipes.UsedCoolant")
 
---require("prototypes.angelextended.slag")
+-- require("prototypes.angelextended.slag")
 require("prototypes.angelextended.angelsbioprocessing")
 require("prototypes.angelextended.angelssmelting")
 
@@ -50,4 +50,4 @@ require("prototypes.item-fuelvalue")
 require("prototypes.chest-gfx")
 require("prototypes.labs-gfx")
 
-require("prototypes.Bobs-alloy-recipe") --Re-enabled Alloy Smelting as bob's mods
+-- require("prototypes.Bobs-alloy-recipe") --Re-enabled Alloy Smelting as bob's mods

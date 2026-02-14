@@ -1,3 +1,4 @@
+local Assert = require("__0zzzcompability__/utils/assert")
 require ("__KaoExtended__/config")
 if not KaoExtended then KaoExtended = {} end
 KaoExtended.getTech = function(name)
@@ -21,6 +22,7 @@ KaoExtended.NewTechnology = function(Iname, pre, Iorder, Iunit)
 	})
 end
 local getIngredients = function(Iingredients)
+	Assert.Debug(false, serpent.block(Iingredients, {maxlevel=3}))
 	local count = 1
 	local ingredient = {}
 	local ingredients = {}
@@ -38,7 +40,7 @@ KaoExtended.buildUnit = function(technology ,Icount, Itime, Iingredients)
 	KaoExtended.getTech(technology).unit = {count = Icount, time = Itime, ingredients = getIngredients(Iingredients)}
 end
 KaoExtended.TechUnlockRecipe = function(technology, unlock)
-  if type(unlock) == "string"then
+  if type(unlock) == "string" then
     table.insert(data.raw["technology"][technology].effects, { type = "unlock-recipe", recipe = unlock })
     return
   end

@@ -159,9 +159,6 @@ else
 	KaoExtended.recipe.addtorecipe("basic-circuit-board", {"condensator", 4})
 	KaoExtended.recipe.addtorecipe("module-processor-board", {"advsci-component-4", 1})
 	
-	--KaoExtended.recipe.addtorecipe("electronic-circuit", {"simple-io", 1})
-	--KaoExtended.recipe.addtorecipe("electronic-circuit", {"condensator", 15})
-	
 	KaoExtended.recipe.addtorecipe("advanced-circuit", {"standart-io", 2})
 	KaoExtended.recipe.addtorecipe("advanced-circuit", {"condensator", 25})
 	KaoExtended.recipe.addtorecipe("advanced-circuit", {"condensator2", 5})
@@ -174,11 +171,4 @@ else
 	KaoExtended.recipe.addtorecipe("advanced-processing-unit", {"condensator3", 32})
 	
 	KaoExtended.recipe.addtorecipe("module-processor-board", {"condensator", 12})
-	
-	--[[
-	KaoExtended.recipe.addtorecipe("steel-chest", {"iron-chest", 2})
-	KaoExtended.recipe.addtorecipe("brass-chest", {"steel-chest", 2})	
-	KaoExtended.recipe.addtorecipe("titanium-chest", {"brass-chest", 2})
-	]]--
-	
 end
