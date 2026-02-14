@@ -1,4 +1,4 @@
-local Assert = require("__0zzzcompability__/utils/assert")
+local Assert = require("utils.assert")
 -- fix Bio_farm + angelsrefining patch
 -- fix old recipe result definition
 local function FixBiSand()
