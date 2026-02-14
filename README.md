@@ -17,8 +17,6 @@ NO LEGACY CODE THAT DO NOTHING!
 # Structure
 Fixes divided into 2 parts -- pre fix and post fix
 
-They splitted into 2 mods:
-
 1. 0zzzcompability -- prefixes
 
 There usually stored fixes in name resolution
