@@ -1,4 +1,4 @@
-local Assert = require("utils.assert")
+local Assert = require("__zzzcompability__/utils/assert")
 if not KaoExtended then
 	KaoExtended = {}
 end

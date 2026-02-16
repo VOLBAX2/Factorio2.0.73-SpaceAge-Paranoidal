@@ -180,7 +180,7 @@ data:extend({
       {"bronze-alloy", 2},
       {"explosives", 3}
     },
-    result = "artillery-shell-prototype"
+    results ={{type="item", name= "artillery-shell-prototype", amount=1}}
 },
 --------------------------------------------------------------------------------------------------
 {
@@ -325,7 +325,7 @@ data:extend({
           {"steel-plate", 120},
           {"concrete", 100},
         },
-        result = "artillery-turret-prototype"
+        results ={{type="item", name= "artillery-turret-prototype", amount=1}}
       },
 --------------------------------------------------------------------------------------------------
       {

@@ -1709,7 +1709,7 @@ bobmods.lib.tech.add_prerequisite("pollution-clean-module-7", "advanced-electron
 bobmods.lib.tech.add_prerequisite("pollution-create-module-7", "advanced-electronics-3")
 --###############################################################################################
 --Последние правки Space X
-data.raw["assembling-machine"]["space-telescope-uplink-station"].icon = "__expanded-rocket-payloads__/graphic/space-telescope-uplink-station-32.png" --фикс неправильной иконки
+data.raw["assembling-machine"]["space-telescope-uplink-station"].icon = "__expanded-rocket-payloads-continued__/graphic/space-telescope-uplink-station-32.png" --фикс неправильной иконки
 data.raw["recipe"]["osmium-ore-processing"].category = "ore-processing-4" --фикс слишком легкого осмия
 data.raw["recipe"]["osmium-processed-processing"].category = "pellet-pressing-4" --фикс слишком легкого осмия
 data.raw["recipe"]["osmium-pellet-smelting"].category = "blast-smelting-4" --фикс слишком легкого осмия

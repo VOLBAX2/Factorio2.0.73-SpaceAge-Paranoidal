@@ -12,8 +12,7 @@ data:extend({
         {"silver-plate", 1},
         {"gold-plate", 1},
       },
-      result = "module-contact",
-      result_count = 3,
+      results ={{type="item", name= "module-contact", amount=2}},
     },
     expensive =
     {
@@ -24,8 +23,7 @@ data:extend({
         {"silver-plate", 1},
         {"gold-plate", 1},
       },
-      result = "module-contact",
-      result_count = 2,
+      results ={{type="item", name= "module-contact", amount=2}},
     },
   },
 })

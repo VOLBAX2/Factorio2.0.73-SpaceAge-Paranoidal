@@ -11,7 +11,7 @@ data:extend({
 			{ "iron-stick", 85 },
 		},
 		energy_required = 30, 
-		result = "warehouse-basic",
+		results ={{type="item", name= "warehouse-basic", amount=1}},
 	},
 	{ -- Passive Provider Warehouse
 		type = "recipe",
@@ -25,7 +25,7 @@ data:extend({
 			{ "iron-stick", 15 },
 		},
 		energy_required = 5,
-		result = "warehouse-passive-provider",
+		results ={{type="item", name= "warehouse-passive-provider", amount=1}},
 	},
 	{ -- Storage Warehouse
 		type = "recipe",
@@ -39,7 +39,7 @@ data:extend({
 			{ "iron-stick", 15 },
 		},
 		energy_required = 5,
-		result = "warehouse-storage",
+		results ={{type="item", name= "warehouse-storage", amount=1}},
 	},
 	{ -- Active Provider Warehouse
 		type = "recipe",
@@ -53,7 +53,7 @@ data:extend({
 			{ "iron-stick", 15 },
 		},
 		energy_required = 5,
-		result = "warehouse-active-provider",
+		results ={{type="item", name= "warehouse-active-provider", amount=1}},
 	},
 	{ -- Requester Warehouse
 		type = "recipe",
@@ -67,7 +67,7 @@ data:extend({
 			{ "iron-stick", 15 },
 		},
 		energy_required = 5,
-		result = "warehouse-requester",
+		results ={{type="item", name= "warehouse-requester", amount=1}},
 	},
 	{ -- Buffer Warehouse
 		type = "recipe",
@@ -81,7 +81,7 @@ data:extend({
 			{ "iron-stick", 15 },
 		},
 		energy_required = 5,
-		result = "warehouse-buffer",
+		results ={{type="item", name= "warehouse-buffer", amount=1}},
 	},
 	{ -- Basic Storehouse
 		type = "recipe",
@@ -95,7 +95,7 @@ data:extend({
 			{ "iron-stick", 16 },
 		},
 		energy_required = 30,
-		result = "storehouse-basic",
+		results ={{type="item", name= "storehouse-basic", amount=1}},
 	},
 	{ -- Passive Provider Storehouse
 		type = "recipe",
@@ -108,7 +108,7 @@ data:extend({
 			{ "iron-stick", 16 }, --drd
 		},
 		energy_required = 5,
-		result = "storehouse-passive-provider",
+		results ={{type="item", name= "storehouse-passive-provider", amount=1}},
 	},
 	{ -- Storage Storehouse
 		type = "recipe",
@@ -121,7 +121,7 @@ data:extend({
 			{ "iron-stick", 16 }, --drd
 		},
 		energy_required = 5,
-		result = "storehouse-storage",
+		results ={{type="item", name= "storehouse-storage", amount=1}},
 	},
 	{ -- Active Provider Storehouse
 		type = "recipe",
@@ -134,7 +134,7 @@ data:extend({
 			{ "iron-stick", 16 }, --drd
 		},
 		energy_required = 5,
-		result = "storehouse-active-provider",
+		results ={{type="item", name= "storehouse-active-provider", amount=1}},
 	},
 	{ -- Requester Storehouse
 		type = "recipe",
@@ -147,7 +147,7 @@ data:extend({
 			{ "iron-stick", 16 }, --drd
 		},
 		energy_required = 5,
-		result = "storehouse-requester",
+		results ={{type="item", name= "storehouse-requester", amount=1}},
 	},
 	{ -- Buffer Storehouse
 		type = "recipe",
@@ -160,6 +160,6 @@ data:extend({
 			{ "iron-stick", 16 }, --drd
 		},
 		energy_required = 5,
-		result = "storehouse-buffer",
+		results ={{type="item", name= "storehouse-buffer", amount=1}},
 	},
 })

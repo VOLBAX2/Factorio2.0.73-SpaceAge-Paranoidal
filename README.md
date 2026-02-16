@@ -36,7 +36,10 @@ For angels mods i use dev2.0 branch from github. Master branch stuggles for 2 ye
 
 ## Disabled things while i dont understand why they need
 
-| file |  name |
-----------------------
-|	KaoExtended/data.lua | Re-enabling bob's alloys |
-|	KaoExtended/data-final-fixes.lua | Re-enabling bob's alloys |
+1. 	KaoExtended/data.lua -- Re-enabling bob's alloys
+2.	KaoExtended/data-final-fixes.lua -- Re-enabling bob's alloys
+3.	zzzparanoidal/settings-final-fixes.lua -- reskins-library custom colors tiers
+	They in the library settings but it seems like other mod remove it
+4. zzzparanoidal/prototypes/offshore-pump/entity-offshore-pump.lua -- seafloor-pump moved to angels-seafloor-pump, where going seafloor-pumps with higher tier i don't know so i remove it's settings for a while
+5. zzzparanoidal/prototypes/beltentities.lua  -- remove miniloader setting fixes. miniloader-redux change miniloader creation strongly so it is outdated and needs reworks(if any)
+6. zzzparanoidal/prototypes/micro-fix.lua -- there used undefined global 'rolling_stock_stand_by_light' i remove options with it so it's optional

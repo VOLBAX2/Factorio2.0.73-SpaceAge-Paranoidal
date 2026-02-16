@@ -47,7 +47,7 @@ data.raw["storage-tank"]["angels-storage-tank-1"].fluid_box.base_area = 1250 --D
 data.raw["storage-tank"]["angels-storage-tank-2"].fluid_box.base_area = 800 --DrD 1500
 
 
-if (mods['Bio_Industries']) and (data.raw["tile"]["bi-solar-mat"]) then 
+if (mods['Bio_Industries_2']) and (data.raw["tile"]["bi-solar-mat"]) then 
 data.raw["tile"]["bi-solar-mat"].pollution_absorption_per_second = 0.0006  --Bio-Industries
 end
 
