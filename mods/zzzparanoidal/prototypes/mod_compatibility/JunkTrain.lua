@@ -443,11 +443,11 @@ data.raw["curved-rail"]["curved-scrap-rail"].fast_replaceable_group = "rail"
 data.raw["straight-rail"]["straight-rail"].fast_replaceable_group = "rail"
 data.raw["curved-rail"]["curved-rail"].fast_replaceable_group = "rail"
 
-data.raw["straight-rail"]["straight-scrap-rail"].collision_mask = {"item-layer", "object-layer", "rail-layer", "floor-layer", "water-tile"}
-data.raw["curved-rail"]["curved-scrap-rail"].collision_mask = {"item-layer", "object-layer", "rail-layer", "floor-layer", "water-tile"}
+data.raw["straight-rail"]["straight-scrap-rail"].collision_mask = {layers={["item-layer"] = true,[ "object-layer"] = true,[ "rail-layer"] = true,[ "floor-layer"] = true,[ "water-tile"] = true}}
+data.raw["curved-rail"]["curved-scrap-rail"].collision_mask = {layers={["item-layer"] = true,[ "object-layer"] = true,[ "rail-layer"] = true,[ "floor-layer"] = true,[ "water-tile"] = true}}
 
-data.raw["straight-rail"]["straight-rail"].collision_mask = {"item-layer", "object-layer", "rail-layer", "floor-layer", "water-tile"}
-data.raw["curved-rail"]["curved-rail"].collision_mask = {"item-layer", "object-layer", "rail-layer", "floor-layer", "water-tile"}
+data.raw["straight-rail"]["straight-rail"].collision_mask = {layers={["item-layer"] = true,[ "object-layer"] = true,[ "rail-layer"] = true,[ "floor-layer"] = true,[ "water-tile"] = true}}
+data.raw["curved-rail"]["curved-rail"].collision_mask = {layers={["item-layer"] = true,[ "object-layer"] = true,[ "rail-layer"] = true,[ "floor-layer"] = true,[ "water-tile"] = true}}
 
 data.raw["rail-signal"]["rail-signal-scrap"].next_upgrade = "rail-signal"
 data.raw["rail-chain-signal"]["rail-chain-signal-scrap"].next_upgrade = "rail-chain-signal"
@@ -461,13 +461,13 @@ data.raw["rail-signal"]["rail-signal"].fast_replaceable_group = "rail-signal"
 data.raw["rail-chain-signal"]["rail-chain-signal"].fast_replaceable_group = "rail-signal"
 data.raw["train-stop"]["train-stop"].fast_replaceable_group = "rail-stop"
 
-data.raw["rail-signal"]["rail-signal-scrap"].collision_mask = {"item-layer", "object-layer", "rail-layer", "floor-layer", "water-tile"}
-data.raw["rail-chain-signal"]["rail-chain-signal-scrap"].collision_mask = {"item-layer", "object-layer", "rail-layer", "floor-layer", "water-tile"}
-data.raw["train-stop"]["train-stop-scrap"].collision_mask = {"item-layer", "object-layer", "player-layer", "water-tile", "layer-14"}
+data.raw["rail-signal"]["rail-signal-scrap"].collision_mask = {layers={["item-layer"] = true,[ "object-layer"] = true,[ "rail-layer"] = true,[ "floor-layer"] = true,[ "water-tile"] = true}}
+data.raw["rail-chain-signal"]["rail-chain-signal-scrap"].collision_mask = {layers={["item-layer"] = true,[ "object-layer"] = true,[ "rail-layer"] = true,[ "floor-layer"] = true,[ "water-tile"] = true}}
+data.raw["train-stop"]["train-stop-scrap"].collision_mask = {layers={["item-layer"] = true,[ "object-layer"] = true,[ "player-layer"] = true,[ "water-tile"] = true,[ "layer-14"] = true}}
 
-data.raw["rail-signal"]["rail-signal"].collision_mask = {"item-layer", "object-layer", "rail-layer", "floor-layer", "water-tile"}
-data.raw["rail-chain-signal"]["rail-chain-signal"].collision_mask = {"item-layer", "object-layer", "rail-layer", "floor-layer", "water-tile"}
-data.raw["train-stop"]["train-stop"].collision_mask = {"item-layer", "object-layer", "player-layer", "water-tile", "layer-14"}
+data.raw["rail-signal"]["rail-signal"].collision_mask = {layers={["item-layer"] = true,[ "object-layer"] = true,[ "rail-layer"] = true,[ "floor-layer"] = true,[ "water-tile"] = true}}
+data.raw["rail-chain-signal"]["rail-chain-signal"].collision_mask = {layers={["item-layer"] = true,[ "object-layer"] = true,[ "rail-layer"] = true,[ "floor-layer"] = true,[ "water-tile"] = true}}
+data.raw["train-stop"]["train-stop"].collision_mask = {layers={["item-layer"] = true,[ "object-layer"] = true,[ "player-layer"] = true,[ "water-tile"] = true,[ "layer-14"] = true}}
 -------------------------------------------------------------------------------------------------
 --подкручиваем рецепт стандартных рельс
 bobmods.lib.recipe.set_ingredient("rail", {"stone-crushed", 10})
