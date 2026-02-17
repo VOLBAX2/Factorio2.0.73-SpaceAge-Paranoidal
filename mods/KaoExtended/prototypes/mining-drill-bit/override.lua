@@ -21,7 +21,7 @@ local function addingMiningdrillbits()
 	KaoExtended.recipe.add_to_recipe("bob-area-mining-drill-3", { "mining-drill-bit-mk4", 1 })
 	KaoExtended.recipe.add_to_recipe("bob-area-mining-drill-4", { "mining-drill-bit-mk5", 1 })
 
-	KaoExtended.recipe.add_to_recipe("seafloor-pump", { "mining-drill-bit-mk2", 1 })
+	KaoExtended.recipe.add_to_recipe("angels-seafloor-pump", { "mining-drill-bit-mk2", 1 })
 end
 
 addingMiningdrillbits()

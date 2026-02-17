@@ -1,5 +1,6 @@
 local params = require "parameters"
 local function proto_tech_cost(tech)
+	if tech.unit == nil then return nil end
   local sum = 0
   if tech.unit.ingredients then
     for _, item in pairs(tech.unit.ingredients) do

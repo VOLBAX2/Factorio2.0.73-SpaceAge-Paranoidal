@@ -82,14 +82,10 @@ function KaoExtended.item.get_basic_type(name)
 end
 
 local function get_item_name(inputs)
-	local result = nil
 	if inputs.name then
-		result = inputs.name
-	else
-		result = inputs[1]
+		return inputs.name
 	end
-
-	Assert(type(result) == "string", "Expected string type as item name but given: " .. type(result))
+	return inputs[1]
 end
 
 -- Create basic item struct
@@ -108,7 +104,7 @@ local function basic_item_impl(name, amount, _type)
 	end
 
 	if type(_type) == "nil" then
-		_type = KaoExtended.get_basic_type(name)
+		_type = KaoExtended.item.get_basic_type(name)
 	end
 
 	return {

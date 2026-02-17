@@ -1,54 +1,19 @@
---bobmodules
---clean godmodules from low-tier components
-bobmods.lib.recipe.remove_ingredient ("god-module-1", "module-circuit-board")
-bobmods.lib.recipe.remove_ingredient ("god-module-2", "electronic-components")
-bobmods.lib.recipe.remove_ingredient ("god-module-2", "intergrated-electronics")
-bobmods.lib.recipe.remove_ingredient ("god-module-3", "intergrated-electronics")
-bobmods.lib.recipe.remove_ingredient ("god-module-4", "electronic-components")
-bobmods.lib.recipe.remove_ingredient ("god-module-4", "intergrated-electronics")
-bobmods.lib.recipe.remove_ingredient ("god-module-4", "processing-electronics")
-bobmods.lib.recipe.remove_ingredient ("god-module-5", "electronic-components")
-bobmods.lib.recipe.remove_ingredient ("god-module-5", "intergrated-electronics")
-bobmods.lib.recipe.remove_ingredient ("god-module-5", "processing-electronics")
 
---clean tier-8 modules from low-tier components
-bobmods.lib.recipe.remove_ingredient ("speed-module-8", "electronic-components")
-bobmods.lib.recipe.remove_ingredient ("effectivity-module-8", "electronic-components")
-bobmods.lib.recipe.remove_ingredient ("productivity-module-8", "electronic-components")
-bobmods.lib.recipe.remove_ingredient ("pollution-create-module-8", "electronic-components")
-bobmods.lib.recipe.remove_ingredient ("pollution-clean-module-8", "electronic-components")
-bobmods.lib.recipe.remove_ingredient ("raw-speed-module-8", "electronic-components")
-bobmods.lib.recipe.remove_ingredient ("green-module-8", "electronic-components")
-bobmods.lib.recipe.remove_ingredient ("raw-productivity-module-8", "electronic-components")
-
-bobmods.lib.recipe.remove_ingredient ("speed-module-8", "intergrated-electronics")
-bobmods.lib.recipe.remove_ingredient ("effectivity-module-8", "intergrated-electronics")
-bobmods.lib.recipe.remove_ingredient ("productivity-module-8", "intergrated-electronics")
-bobmods.lib.recipe.remove_ingredient ("pollution-create-module-8", "intergrated-electronics")
-bobmods.lib.recipe.remove_ingredient ("pollution-clean-module-8", "intergrated-electronics")
-bobmods.lib.recipe.remove_ingredient ("raw-speed-module-8", "intergrated-electronics")
-bobmods.lib.recipe.remove_ingredient ("green-module-8", "intergrated-electronics")
-bobmods.lib.recipe.remove_ingredient ("raw-productivity-module-8", "intergrated-electronics")
-
-bobmods.lib.recipe.remove_ingredient ("speed-module-8", "processing-electronics")
-bobmods.lib.recipe.remove_ingredient ("effectivity-module-8", "processing-electronics")
-bobmods.lib.recipe.remove_ingredient ("productivity-module-8", "processing-electronics")
-bobmods.lib.recipe.remove_ingredient ("pollution-create-module-8", "processing-electronics")
-bobmods.lib.recipe.remove_ingredient ("pollution-clean-module-8", "processing-electronics")
-bobmods.lib.recipe.remove_ingredient ("raw-speed-module-8", "processing-electronics")
-bobmods.lib.recipe.remove_ingredient ("green-module-8", "processing-electronics")
-bobmods.lib.recipe.remove_ingredient ("raw-productivity-module-8", "processing-electronics")
-
-
+--debug
+local sections = {"item", "recipe", "technology"}
+for _, s in ipairs(sections) do
+	for k, _ in pairs(data.raw[s]) do
+		log(s .. " : ".. k)
+	end
+end
+--debug
 --ANGELS PETROCHEM
-
 
 data.raw["storage-tank"]["angels-storage-tank-1"].fluid_box.base_area = 1250 --DrD 2000
 data.raw["storage-tank"]["angels-storage-tank-2"].fluid_box.base_area = 800 --DrD 1500
 
-
-if (mods['Bio_Industries_2']) and (data.raw["tile"]["bi-solar-mat"]) then 
-data.raw["tile"]["bi-solar-mat"].pollution_absorption_per_second = 0.0006  --Bio-Industries
+if mods["Bio_Industries_2"] and data.raw["tile"]["bi-solar-mat"] then
+	data.raw["tile"]["bi-solar-mat"].pollution_absorption_per_second = 0.0006 --Bio-Industries
 end
 
 data.raw["pump"]["pump"].hidden = true
@@ -57,42 +22,38 @@ data.raw["pump"]["bob-pump-3"].hidden = true
 data.raw["pump"]["bob-pump-4"].hidden = true
 
 data.raw.item["bob-valve"].hidden = true
-data.raw["storage-tank"]["bob-valve"].hidden = true
 data.raw.item["bob-overflow-valve"].hidden = true
-data.raw["storage-tank"]["bob-overflow-valve"].hidden = true
 data.raw.item["bob-topup-valve"].hidden = true
-data.raw["storage-tank"]["bob-topup-valve"].hidden = true
 data.raw.recipe["bob-valve"].hidden = true
 data.raw.recipe["bob-overflow-valve"].hidden = true
 data.raw.recipe["bob-topup-valve"].hidden = true
 
-data.raw.boiler["oil-boiler"].hidden = true
-data.raw.boiler["oil-boiler-2"].hidden = true
-data.raw.boiler["oil-boiler-3"].hidden = true
-data.raw.boiler["oil-boiler-4"].hidden = true
+data.raw.boiler["bob-oil-boiler"].hidden = true
+data.raw.boiler["bob-oil-boiler-2"].hidden = true
+data.raw.boiler["bob-oil-boiler-3"].hidden = true
+data.raw.boiler["bob-oil-boiler-4"].hidden = true
 
-data.raw.item["oil-boiler"].hidden = true
-data.raw.item["oil-boiler-2"].hidden = true
-data.raw.item["oil-boiler-3"].hidden = true
-data.raw.item["oil-boiler-4"].hidden = true
+data.raw.item["bob-oil-boiler"].hidden = true
+data.raw.item["bob-oil-boiler-2"].hidden = true
+data.raw.item["bob-oil-boiler-3"].hidden = true
+data.raw.item["bob-oil-boiler-4"].hidden = true
 
-data.raw.recipe["oil-boiler"].hidden = true
-data.raw.recipe["oil-boiler-2"].hidden = true
-data.raw.recipe["oil-boiler-3"].hidden = true
-data.raw.recipe["oil-boiler-4"].hidden = true
+data.raw.recipe["bob-oil-boiler"].hidden = true
+data.raw.recipe["bob-oil-boiler-2"].hidden = true
+data.raw.recipe["bob-oil-boiler-3"].hidden = true
+data.raw.recipe["bob-oil-boiler-4"].hidden = true
 
 data.raw.technology["bob-oil-boiler-1"].hidden = true
 data.raw.technology["bob-oil-boiler-2"].hidden = true
 data.raw.technology["bob-oil-boiler-3"].hidden = true
 data.raw.technology["bob-oil-boiler-4"].hidden = true
 
-bobmods.lib.recipe.remove_ingredient ("module-processor-board", "boiler")
-bobmods.lib.recipe.add_new_ingredient ("module-processor-board", {type="item", name="copper-plate", amount=3})
-bobmods.lib.recipe.remove_ingredient ("module-processor-board-2", "boiler")
-bobmods.lib.recipe.add_new_ingredient ("module-processor-board-2", {type="item", name="copper-plate", amount=5})
-bobmods.lib.recipe.remove_ingredient ("module-processor-board-3", "boiler")
-bobmods.lib.recipe.add_new_ingredient ("module-processor-board-3", {type="item", name="copper-plate", amount=10})
-
+bobmods.lib.recipe.remove_ingredient("bob-module-processor-board", "boiler")
+bobmods.lib.recipe.add_new_ingredient("bob-module-processor-board", { type = "item", name = "copper-plate", amount = 3 })
+bobmods.lib.recipe.remove_ingredient("bob-module-processor-board-2", "boiler")
+bobmods.lib.recipe.add_new_ingredient("bob-module-processor-board-2", { type = "item", name = "copper-plate", amount = 5 })
+bobmods.lib.recipe.remove_ingredient("bob-module-processor-board-3", "boiler")
+bobmods.lib.recipe.add_new_ingredient("bob-module-processor-board-3", { type = "item", name = "copper-plate", amount = 10 })
 
 --bobmods.lib.recipe.replace_ingredient ("fast-underground-belt", "iron-gear-wheel", "steel-gear-wheel")
 
@@ -101,7 +62,7 @@ bobmods.lib.recipe.add_new_ingredient ("module-processor-board-3", {type="item",
   bobmods.lib.recipe.replace_ingredient("speed-module-3", "processing-unit", "standart-io")
   bobmods.lib.recipe.replace_ingredient("productivity-module-3", "processing-unit", "standart-io")
   bobmods.lib.recipe.replace_ingredient("effectivity-module-3", "processing-unit", "standart-io")
-  
+
   bobmods.lib.recipe.replace_ingredient("speed-module-4", "processing-unit", "advanced-io")
   bobmods.lib.recipe.replace_ingredient("productivity-module-4", "processing-unit", "advanced-io")
   bobmods.lib.recipe.replace_ingredient("effectivity-module-4", "processing-unit", "advanced-io")
@@ -116,19 +77,17 @@ bobmods.lib.recipe.add_new_ingredient ("module-processor-board-3", {type="item",
 
   bobmods.lib.recipe.replace_ingredient("speed-module-7", "processing-unit", "predictive-io")
   bobmods.lib.recipe.replace_ingredient("productivity-module-7", "processing-unit", "predictive-io")
-  bobmods.lib.recipe.replace_ingredient("effectivity-module-7", "processing-unit", "predictive-io")  
+  bobmods.lib.recipe.replace_ingredient("effectivity-module-7", "processing-unit", "predictive-io")
  ]]
-  
 
-	
-                -- missed circuits in modules
-  
-					-- see oberhaul prototypes 
-  
-				-- modules effects tweak
-				
-    --code from CoppermineBobModuleRebalancing
---[[				
+-- missed circuits in modules
+
+-- see oberhaul prototypes
+
+-- modules effects tweak
+
+--code from CoppermineBobModuleRebalancing
+--[[
 for name, item in pairs(data.raw.module) do
     local subgroup = item.subgroup
 

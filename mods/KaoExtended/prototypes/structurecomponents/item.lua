@@ -84,8 +84,8 @@ end
 
 bobmods.lib.recipe.remove_ingredient("brass-alloy", "copper-plate")
 bobmods.lib.recipe.remove_ingredient("brass-alloy", "zinc-plate")
-table.insert(data.raw["recipe"]["brass-alloy"].ingredients, { type = "item", name = "bronze-alloy", amount = 2 })
-table.insert(data.raw["recipe"]["brass-alloy"].ingredients, { type = "item", name = "zinc-plate", amount = 8 })
+table.insert(data.raw["recipe"]["bob-brass-alloy"].ingredients, { type = "item", name = "bronze-alloy", amount = 2 })
+table.insert(data.raw["recipe"]["bob-brass-alloy"].ingredients, { type = "item", name = "zinc-plate", amount = 8 })
 
 bobmods.lib.recipe.remove_ingredient("invar-alloy", "iron-plate")
-table.insert(data.raw["recipe"]["invar-alloy"].ingredients, { type = "item", name = "lead-plate", amount = 3 })
+table.insert(data.raw["recipe"]["bob-invar-alloy"].ingredients, { type = "item", name = "lead-plate", amount = 3 })
