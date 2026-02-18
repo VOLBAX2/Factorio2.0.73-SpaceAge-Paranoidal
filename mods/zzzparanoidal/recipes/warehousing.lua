@@ -2,7 +2,7 @@ data:extend({
 	{ -- Basic Warehouse
 		type = "recipe",
 		name = "warehouse-basic",
-		enabled = "false",
+		enabled = false,
 		ingredients = {
 			{ type = "item", name = "storehouse-basic", amount = 2}, --added drd
 			{ type = "item", name = "steel-plate", amount = 200},
@@ -15,7 +15,7 @@ data:extend({
 	{ -- Passive Provider Warehouse
 		type = "recipe",
 		name = "angels-warehouse-passive-provider",
-		enabled = "false",
+		enabled = false,
 		ingredients = {
 			{ type = "item", name = "warehouse-basic", amount = 1},
 			{ type = "item", name = "angels-logistic-chest-passive-provider", amount = 1},
@@ -28,7 +28,7 @@ data:extend({
 	{ -- Storage Warehouse
 		type = "recipe",
 		name = "angels-warehouse-storage",
-		enabled = "false",
+		enabled = false,
 		ingredients = {
 			{ type = "item", name = "warehouse-basic", amount = 1},
 			{ type = "item", name = "angels-logistic-chest-storage", amount = 1},
@@ -41,7 +41,7 @@ data:extend({
 	{ -- Active Provider Warehouse
 		type = "recipe",
 		name = "angels-warehouse-active-provider",
-		enabled = "false",
+		enabled = false,
 		ingredients = {
 			{ type = "item", name = "warehouse-basic", amount = 1},
 			{ type = "item", name = "angels-logistic-chest-active-provider", amount = 1},
@@ -54,7 +54,7 @@ data:extend({
 	{ -- Requester Warehouse
 		type = "recipe",
 		name = "angels-warehouse-requester",
-		enabled = "false",
+		enabled = false,
 		ingredients = {
 			{ type = "item", name = "warehouse-basic", amount = 1},
 			{ type = "item", name = "angels-logistic-chest-requester", amount = 1},
@@ -67,7 +67,7 @@ data:extend({
 	{ -- Buffer Warehouse
 		type = "recipe",
 		name = "angels-warehouse-buffer",
-		enabled = "false",
+		enabled = false,
 		ingredients = {
 			{ type = "item", name = "warehouse-basic", amount = 1},
 			{ type = "item", name = "angels-logistic-chest-buffer", amount = 1},
@@ -80,7 +80,7 @@ data:extend({
 	{ -- Basic Storehouse
 		type = "recipe",
 		name = "storehouse-basic",
-		enabled = "false",
+		enabled = false,
 		ingredients = {
 			{ type = "item", name = "steel-chest", amount = 10}, --drd
 			{ type = "item", name = "steel-plate", amount = 50},
@@ -93,7 +93,7 @@ data:extend({
 	{ -- Passive Provider Storehouse
 		type = "recipe",
 		name = "storehouse-passive-provider",
-		enabled = "false",
+		enabled = false,
 		ingredients = {
 			{ type = "item", name = "storehouse-basic", amount = 1},
 			{ type = "item", name = "angels-logistic-chest-passive-provider", amount = 1},
@@ -105,7 +105,7 @@ data:extend({
 	{ -- Storage Storehouse
 		type = "recipe",
 		name = "storehouse-storage",
-		enabled = "false",
+		enabled = false,
 		ingredients = {
 			{ type = "item", name = "storehouse-basic", amount = 1},
 			{ type = "item", name = "angels-logistic-chest-storage", amount = 1},
@@ -117,7 +117,7 @@ data:extend({
 	{ -- Active Provider Storehouse
 		type = "recipe",
 		name = "storehouse-active-provider",
-		enabled = "false",
+		enabled = false,
 		ingredients = {
 			{ type = "item", name = "storehouse-basic", amount = 1},
 			{ type = "item", name = "angels-logistic-chest-active-provider", amount = 1},
@@ -129,7 +129,7 @@ data:extend({
 	{ -- Requester Storehouse
 		type = "recipe",
 		name = "storehouse-requester",
-		enabled = "false",
+		enabled = false,
 		ingredients = {
 			{ type = "item", name = "storehouse-basic", amount = 1},
 			{ type = "item", name = "angels-logistic-chest-requester", amount = 1},
@@ -141,7 +141,7 @@ data:extend({
 	{ -- Buffer Storehouse
 		type = "recipe",
 		name = "storehouse-buffer",
-		enabled = "false",
+		enabled = false,
 		ingredients = {
 			{ type = "item", name = "storehouse-basic", amount = 1},
 			{ type = "item", name = "angels-logistic-chest-buffer", amount = 1},

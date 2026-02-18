@@ -1528,7 +1528,7 @@ data:extend({
 		category = "chemistry",
 		subgroup = "petrochem-sulfur",
 		energy_required = 4,
-		enabled = "false",
+		enabled = false,
 		ingredients = {
 			{ type = "item", name = "angels-solid-calcium-chloride", amount = 1 },
 			{ type = "item", name = "angels-solid-sodium-carbonate", amount = 1 },
@@ -1548,7 +1548,7 @@ data:extend({
 		category = "chemistry",
 		subgroup = "petrochem-sulfur",
 		energy_required = 4,
-		enabled = "false",
+		enabled = false,
 		ingredients = {
 			{ type = "item", name = "angels-solid-calcium-carbonate", amount = 1 },
 			{ type = "fluid", name = "liquid-sulfuric-acid", amount = 50 },

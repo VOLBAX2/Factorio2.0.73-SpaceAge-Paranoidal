@@ -9,19 +9,29 @@ local blank = {
 local offshore_pump_output_template = {
 	type = "pump",
 	collision_box = { { -0.9, -0 }, { 0.9, 0.65 } },
-	collision_mask = {layers={ ["not-colliding-with-itself"] = true }},
+	collision_mask = { layers = { ["not-colliding-with-itself"] = true } },
 	fluid_box = {
 		base_area = 1,
 		height = 2,
 		pipe_covers = pipecoverspictures(),
 		pipe_connections = {
+
 			{
-				position = { 0, 0.9 },
-				type = "output",
+				direction = 8,
+				flow_direction = "output",
+				position = {
+					0,
+					0.2,
+				},
 			},
+
 			{
-				position = { 0, -0.1 },
-				type = "input",
+				direction = 8,
+				flow_direction = "input",
+				position = {
+					0,
+					-0.1,
+				},
 			},
 		},
 	},
@@ -61,10 +71,16 @@ local offshore_pump_output_template = {
 local seafloor_pump = data.raw["offshore-pump"]["angels-seafloor-pump"]
 seafloor_pump.flags = seafloor_pump.flags or {}
 table.insert(seafloor_pump.flags, "hide-alt-info")
-seafloor_pump.fluid_box.pipe_connections = { {
-	type = "output",
-	position = { 0, 0.6 },
-} }
+seafloor_pump.fluid_box.pipe_connections = {
+	{
+		direction = 8,
+		flow_direction = "output",
+		position = {
+			0,
+			0.2,
+		},
+	},
+}
 seafloor_pump.selectable_in_game = false
 
 local seafloor_pump_output = table.deepcopy(offshore_pump_output_template)

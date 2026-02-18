@@ -32,7 +32,7 @@ end
 local function scaleRecipe(recipe)
 	if recipe.energy_required and recipe.energy_required < min_time then
 		local pack = math.max(1, math.ceil(min_time / recipe.energy_required))
-		pack = pack_trim(pack, recipe.result, recipe.result_count or 1)
+		pack = pack_trim(pack, recipe.result, recipe.esult_count or 1)
 		if recipe.results then
 			for j, item in pairs(recipe.results) do
 				if item.amount then

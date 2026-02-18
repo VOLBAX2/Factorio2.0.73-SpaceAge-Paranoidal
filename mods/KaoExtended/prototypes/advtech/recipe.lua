@@ -10,8 +10,7 @@ data:extend({
 			{ type = "item", name = "stone", amount = 3},
 			{ type = "item", name = "coal", amount = 2},
 		},
-		result = "sci-component-1",
-		result_count = 1,
+		results ={{type="item", name= "sci-component-1", amount = 1}},
 	},
 	{
 		type = "recipe",
@@ -25,8 +24,7 @@ data:extend({
 			{ type = "item", name = "bob-tin-plate", amount = 5},
 			{ type = "item", name = "simple-io", amount = 1},
 		},
-		result = "sci-component-2",
-		result_count = 2,
+		results ={{type="item", name= "sci-component-2", amount = 2}},
 	},
 	{
 		type = "recipe",
@@ -41,8 +39,7 @@ data:extend({
 			{ type = "item", name = "aluminium-plate", amount = 5},
 			{ type = "item", name = "advsci-component-3", amount = 2},
 		},
-		result = "sci-component-3",
-		result_count = 2,
+		results ={{type="item", name= "sci-component-3", amount = 2}},
 	},
 	{
 		type = "recipe",
@@ -61,8 +58,7 @@ data:extend({
 			{ type = "item", name = "bob-titanium-plate", amount = 12},
 			{ type = "item", name = "tungsten-plate", amount = 8},
 		},
-		result = "sci-component-4",
-		result_count = 2,
+		results ={{type="item", name= "sci-component-4", amount = 2}},
 	},
 	{
 		type = "recipe",
@@ -75,8 +71,7 @@ data:extend({
 			{ type = "item", name = "sci-component-2", amount = 2},
 			{ type = "item", name = "steel-plate", amount = 5},
 		},
-		result = "sci-component-m",
-		result_count = 2,
+		results ={{type="item", name= "sci-component-m", amount = 2}},
 	},
 	{
 		type = "recipe",
@@ -91,8 +86,7 @@ data:extend({
 			{ type = "item", name = "fast-transport-belt", amount = 5},
 			{ type = "item", name = "express-transport-belt", amount = 5}, -- added at 017
 		},
-		result = "sci-component-l",
-		result_count = 2,
+		results ={{type="item", name= "sci-component-l", amount = 2}},
 	},
 	{
 		type = "recipe",
@@ -106,8 +100,7 @@ data:extend({
 			{ type = "item", name = "assembling-machine-2", amount = 1},
 			{ type = "item", name = "electric-engine-unit", amount = 4},
 		},
-		result = "sci-component-5",
-		result_count = 2,
+		results ={{type="item", name= "sci-component-5", amount = 2}},
 	},
 	{
 		type = "recipe",
@@ -121,8 +114,7 @@ data:extend({
 			{ type = "item", name = "nickel-plate", amount = 2},
 			{ type = "item", name = "glass", amount = 2},
 		},
-		result = "advsci-component-3",
-		result_count = 1,
+		results ={{type="item", name= "advsci-component-3", amount = 1}},
 	},
 	{
 		type = "recipe",
@@ -135,8 +127,7 @@ data:extend({
 			{ type = "item", name = "bob-silver-plate", amount = 2},
 			{ type = "item", name = "bob-gold-plate", amount = 3},
 		},
-		result = "advsci-component-4",
-		result_count = 1,
+		results ={{type="item", name= "advsci-component-4", amount = 1}},
 	},
 	{
 		type = "recipe",
@@ -151,8 +142,7 @@ data:extend({
 			{ type = "item", name = "copper-cable", amount = 6},
 			{ type = "item", name = "solder", amount = 6},
 		},
-		result = "simple-io",
-		result_count = 1,
+		results ={{type="item", name= "simple-io", amount = 1}},
 	},
 	{
 		type = "recipe",
@@ -169,8 +159,7 @@ data:extend({
 			{ type = "item", name = "bob-tinned-copper-cable", amount = 8},
 			{ type = "item", name = "solder", amount = 12},
 		},
-		result = "standart-io",
-		result_count = 1,
+		results ={{type="item", name= "standart-io", amount = 1}},
 	},
 	{
 		type = "recipe",
@@ -188,8 +177,7 @@ data:extend({
 			{ type = "item", name = "bob-insulated-cable", amount = 12},
 			{ type = "item", name = "solder", amount = 18},
 		},
-		result = "advanced-io",
-		result_count = 1,
+		results ={{type="item", name= "advanced-io", amount = 1}},
 	},
 	{
 		type = "recipe",
@@ -210,8 +198,7 @@ data:extend({
 			{ type = "item", name = "bob-gilded-copper-cable", amount = 18},
 			{ type = "item", name = "solder", amount = 24},
 		},
-		result = "predictive-io",
-		result_count = 1,
+		results ={{type="item", name= "predictive-io", amount = 1}},
 	},
 	{
 		type = "recipe",
@@ -236,8 +223,7 @@ data:extend({
 			{ type = "item", name = "bob-gilded-copper-cable", amount = 40},
 			{ type = "item", name = "solder", amount = 30},
 		},
-		result = "intelligent-io",
-		result_count = 1,
+		results ={{type="item", name= "intelligent-io", amount = 1}},
 	},
 	{
 		type = "recipe",
@@ -249,8 +235,7 @@ data:extend({
 			{ type = "item", name = "iron-plate", amount = 2},
 			{ type = "item", name = "copper-cable", amount = 1},
 		},
-		result = "condensator",
-		result_count = 3,
+		results ={{type="item", name= "condensator", amount = 3}},
 	},
 	{
 		type = "recipe",
@@ -263,8 +248,7 @@ data:extend({
 			{ type = "item", name = "bob-tinned-copper-cable", amount = 2},
 			{ type = "fluid", name = "liquid-sulfuric-acid", amount = 10 },
 		},
-		result = "condensator2",
-		result_count = 2,
+		results ={{type="item", name= "condensator2", amount = 2}},
 	},
 	{
 		type = "recipe",
@@ -277,8 +261,7 @@ data:extend({
 			{ type = "item", name = "aluminium-plate", amount = 1},
 			{ type = "item", name = "resin", amount = 1},
 		},
-		result = "condensator3",
-		result_count = 1,
+		results ={{type="item", name= "condensator3", amount = 1}},
 	},
 })
 
@@ -323,8 +306,7 @@ then
 				{ type = "item", name = "bob-alien-artifact-green", amount = 2},
 				{ type = "item", name = "bob-alien-artifact-red", amount = 2},
 			},
-			result = "sci-component-o",
-			result_count = 2,
+			results ={{type="item", name= "sci-component-o", amount = 2}},
 		},
 	})
 else
@@ -341,8 +323,7 @@ else
 				{ type = "item", name = "sci-component-2", amount = 4},
 				{ type = "item", name = "bob-alien-artifact", amount = 10},
 			},
-			result = "sci-component-o",
-			result_count = 2,
+			results ={{type="item", name= "sci-component-o", amount = 2}},
 		},
 	})
 end
@@ -354,7 +335,7 @@ data:extend({
 		category = "strand-casting",
 		subgroup = "angels-iron-casting",
 		normal = {
-			enabled = "false",
+			enabled = false,
 			energy_required = 4,
 			ingredients = {
 				{ type = "fluid", name = "liquid-molten-iron", amount = 80 },
@@ -363,7 +344,7 @@ data:extend({
 			results = { { type = "item", name = "angels-iron-gear-wheel-stack", amount = 2 } },
 		},
 		expensive = {
-			enabled = "false",
+			enabled = false,
 			energy_required = 4,
 			ingredients = {
 				{ type = "fluid", name = "liquid-molten-iron", amount = 100 },
@@ -393,7 +374,7 @@ data:extend({
 		category = "strand-casting",
 		subgroup = "angels-iron-casting",
 		normal = {
-			enabled = "false",
+			enabled = false,
 			energy_required = 2,
 			ingredients = {
 				{ type = "fluid", name = "liquid-molten-iron", amount = 140 },
@@ -406,7 +387,7 @@ data:extend({
 			main_product = "angels-iron-gear-wheel-stack",
 		},
 		expensive = {
-			enabled = "false",
+			enabled = false,
 			energy_required = 2,
 			ingredients = {
 				{ type = "fluid", name = "liquid-molten-iron", amount = 180 },
@@ -441,7 +422,7 @@ data:extend({
 		category = "strand-casting",
 		subgroup = "angels-steel-casting",
 		normal = {
-			enabled = "false",
+			enabled = false,
 			energy_required = 4,
 			ingredients = {
 				{ type = "fluid", name = "liquid-molten-steel", amount = 80 },
@@ -450,7 +431,7 @@ data:extend({
 			results = { { type = "item", name = "angels-steel-gear-wheel-stack", amount = 2 } },
 		},
 		expensive = {
-			enabled = "false",
+			enabled = false,
 			energy_required = 4,
 			ingredients = {
 				{ type = "fluid", name = "liquid-molten-steel", amount = 100 },
@@ -480,7 +461,7 @@ data:extend({
 		category = "strand-casting",
 		subgroup = "angels-steel-casting",
 		normal = {
-			enabled = "false",
+			enabled = false,
 			energy_required = 2,
 			ingredients = {
 				{ type = "fluid", name = "liquid-molten-steel", amount = 140 },
@@ -493,7 +474,7 @@ data:extend({
 			main_product = "angels-steel-gear-wheel-stack",
 		},
 		expensive = {
-			enabled = "false",
+			enabled = false,
 			energy_required = 2,
 			ingredients = {
 				{ type = "fluid", name = "liquid-molten-steel", amount = 180 },
@@ -530,7 +511,7 @@ data:extend({
 		subgroup = "angels-iron-casting",
 		energy_required = 0.5,
 		allow_decomposition = false,
-		enabled = "false",
+		enabled = false,
 		ingredients = {
 			{ type = "item", name = "angels-iron-gear-wheel-stack", amount = 1 },
 		},
@@ -558,7 +539,7 @@ data:extend({
 		category = "advanced-crafting",
 		subgroup = "angels-steel-casting",
 		energy_required = 0.5,
-		enabled = "false",
+		enabled = false,
 		allow_decomposition = false,
 		ingredients = {
 			{ type = "item", name = "angels-steel-gear-wheel-stack", amount = 1 },

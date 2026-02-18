@@ -1,11 +1,10 @@
-
 --ANGELS PETROCHEM
 
 data.raw["storage-tank"]["angels-storage-tank-1"].fluid_box.base_area = 1250 --DrD 2000
 data.raw["storage-tank"]["angels-storage-tank-2"].fluid_box.base_area = 800 --DrD 1500
 
 if mods["Bio_Industries_2"] and data.raw["tile"]["bi-solar-mat"] then
-	data.raw["tile"]["bi-solar-mat"].pollution_absorption_per_second = 0.0006 --Bio-Industries
+	data.raw["tile"]["bi-solar-mat"].absorptions_per_second = { pollution = 0.0006 } --Bio-Industries
 end
 
 data.raw["pump"]["pump"].hidden = true
@@ -41,11 +40,20 @@ data.raw.technology["bob-oil-boiler-3"].hidden = true
 data.raw.technology["bob-oil-boiler-4"].hidden = true
 
 bobmods.lib.recipe.remove_ingredient("bob-module-processor-board", "boiler")
-bobmods.lib.recipe.add_new_ingredient("bob-module-processor-board", { type = "item", name = "copper-plate", amount = 3 })
+bobmods.lib.recipe.add_new_ingredient(
+	"bob-module-processor-board",
+	{ type = "item", name = "copper-plate", amount = 3 }
+)
 bobmods.lib.recipe.remove_ingredient("bob-module-processor-board-2", "boiler")
-bobmods.lib.recipe.add_new_ingredient("bob-module-processor-board-2", { type = "item", name = "copper-plate", amount = 5 })
+bobmods.lib.recipe.add_new_ingredient(
+	"bob-module-processor-board-2",
+	{ type = "item", name = "copper-plate", amount = 5 }
+)
 bobmods.lib.recipe.remove_ingredient("bob-module-processor-board-3", "boiler")
-bobmods.lib.recipe.add_new_ingredient("bob-module-processor-board-3", { type = "item", name = "copper-plate", amount = 10 })
+bobmods.lib.recipe.add_new_ingredient(
+	"bob-module-processor-board-3",
+	{ type = "item", name = "copper-plate", amount = 10 }
+)
 
 --bobmods.lib.recipe.replace_ingredient ("fast-underground-belt", "iron-gear-wheel", "steel-gear-wheel")
 

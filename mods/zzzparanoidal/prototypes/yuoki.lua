@@ -137,7 +137,6 @@ data.raw.recipe["y-c22-recipe"].ingredients = {
       { type = "item", name = "plutonium-239", amount = 41},
       { type = "item", name = "uranium-238", amount = 2}
     },
-	result_count = 1
   },
 ]]--
 

@@ -1,3 +1,4 @@
+log(serpent.block(data.raw["offshore-pump"]["offshore-pump"].fluid_box.pipe_connections))
 require("prototypes.miniloaders")
 require("prototypes.generators")
 require("prototypes.fluid-void")

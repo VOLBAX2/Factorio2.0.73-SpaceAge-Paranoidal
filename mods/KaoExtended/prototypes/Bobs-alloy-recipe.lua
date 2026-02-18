@@ -157,8 +157,7 @@ data:extend({
       { type = "item", name = "iron-plate", amount = 14 },
       { type = "item", name = "cobalt-plate", amount = 1 },
     },
-    result = "cobalt-steel-alloy",
-    result_count = 1,
+    results ={{type="item", name= "cobalt-steel-alloy", amount = 1}},
     allow_decomposition = false,
   },
   
@@ -173,8 +172,7 @@ data:extend({
       { type = "item", name = "iron-plate", amount = 14 },
       { type = "item", name = "cobalt-plate", amount = 1 },
     },
-    result = "cobalt-steel-alloy",
-    result_count = 1,
+    results ={{type="item", name= "cobalt-steel-alloy", amount = 1}},
     allow_decomposition = false,
   },
   --[[
@@ -189,8 +187,7 @@ data:extend({
         { type = "item", name = "solder-alloy", amount = 4},
         { type = "item", name = "resin", amount = 2},
       },
-      result = "solder",
-      result_count = 1,
+      results ={{type="item", name= "solder", amount = 1}},
       allow_decomposition = false,
     },
   ]]--

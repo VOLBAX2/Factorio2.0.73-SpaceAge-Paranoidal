@@ -30,7 +30,7 @@ local function newRecipe(item, time)
 		enabled = false,
 		energy_required = time,
 		ingredients = {},
-		result = "mining-drill-bit-" .. item,
+		results = {{type="item", name= "mining-drill-bit-" .. item, amount = 1}}
 	}
 	data:extend({ rec })
 	return rec
