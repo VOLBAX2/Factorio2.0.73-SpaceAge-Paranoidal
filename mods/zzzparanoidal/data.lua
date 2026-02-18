@@ -15,7 +15,7 @@ require("prototypes.artillery-prototype.artillery-turret-prototype") --фикс 
 
 require("prototypes.beltentities") --переехало из paranoidal-tweaks_0.18.34 (sbelyakov)
 
-require("prototypes.micro-fix") --доработка напильником всего подряд -- фиксы от Кирика
+-- require("prototypes.micro-fix") --доработка напильником всего подряд -- фиксы от Кирика -- not reviewed
 
 require("prototypes.entity.entity") --фиксы неправильных имён от SEO
 require("prototypes.recipe-new") --новые рецепты

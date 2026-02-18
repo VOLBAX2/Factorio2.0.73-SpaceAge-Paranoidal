@@ -56,5 +56,8 @@ for _,r in pairs(data.raw["recipe"]) do
 end
 -- Uniform recipe end
 
+-- modern factorio accept only ingredients like {type = "...", name = "...", amount=...}
+-- there i convert {"...", ...} to {type = "...", name = "...", amount=...}
+require("recipes.fix-ingredients-style")
 --должно быть последним. После всех рецептов.
 require("recipes.flowfix")
