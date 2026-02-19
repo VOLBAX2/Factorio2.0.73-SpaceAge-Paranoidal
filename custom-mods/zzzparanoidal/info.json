@@ -1,0 +1,26 @@
+{
+  "name": "zzzparanoidal",
+  "version": "8.0.0",
+  "title": "!_Paranoidal",
+  "factorio_version": "2.0",
+  "author": "Sovigod",
+  "contact": "https://discord.gg/MnXGAmC",
+  "homepage": "https://discord.gg/MnXGAmC",
+  "description": "PARANOIDAL 8. Core mod for PARANOIDAL\n2024.09",
+  "dependencies": [
+    "base >= 1.1.100",
+    "boblibrary", 
+    "boblibrary",
+    "BatteryElectricTrain",
+    "KaoExtended",
+    "? angelsindustries", 
+    "? angelsrefining", 
+    "? extendedangels",
+    "angelsbioprocessing",
+    "angelssmelting",
+    "expanded-rocket-payloads-continued",
+    "bobwarfare",
+    "bobrevamp",
+    "Bio_Industries_2"
+    ]
+}

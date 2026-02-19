@@ -1,0 +1,24 @@
+---------------------------------------------------------------------------------------------------
+Version: 2.0.0
+Date: 2024-10-23
+  Features:
+    - Partial Space Age support is now included. Only nauvis will have terrain recolored at this time.
+      - Terrain on the new planets seem to vary a lot more in regards to bonuses/uses so I'm not sure making them all look exactly the same is a good idea? Seems like it would affect knowing where you can plant gleba trees, at least.
+      - The No decoratives option should work on all planets/space. You MAY need to disable the No Decoratives option if that causes issues on Gleba. I don't think decoratives are required but they are part of the tree definitions.
+  Bugfixes:
+    - Fixed that decoratives were removed from Nauvis even when the No Decoratives option was off.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.0
+Date: 2024-10-23
+  Features:
+    - Initial version for Factorio 2.0 
+---------------------------------------------------------------------------------------------------
+Version: 0.0.7
+Date: 2023-07-16
+  Features:
+    - Added a new option for terrain color - Chooser. Allows you to use Factorio's color chooser to pick what color you want terrain to look like. From cotton candy to rust brown, the choice is yours (within the limits of the Factorio engine's color and tinting). 
+---------------------------------------------------------------------------------------------------
+Version: 0.0.6
+Date: 2023-01-16
+  Features:
+    - Port to Factorio 1.1

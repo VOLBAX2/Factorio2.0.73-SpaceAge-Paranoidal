@@ -1,0 +1,123 @@
+local show_formula = settings.startup["angels-show-chemical-formula"].value
+
+data:extend({
+  -- ORE
+  {
+    type = "item",
+    name = "angels-lead-ore",
+    icon = "__angelssmeltinggraphics__/graphics/icons/ore-lead.png",
+    icon_size = 32,
+    subgroup = "angels-lead",
+    order = "a",
+    stack_size = 200,
+  },
+  -- SMELTING INTERMEDIATE
+  {
+    type = "item",
+    name = "angels-processed-lead",
+    icon = "__angelssmeltinggraphics__/graphics/icons/processed-lead.png",
+    icon_size = 64,
+    subgroup = "angels-lead",
+    order = "b",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "angels-pellet-lead",
+    icon = "__angelssmeltinggraphics__/graphics/icons/pellet-lead.png",
+    icon_size = 64,
+    subgroup = "angels-lead",
+    order = "c",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "angels-solid-lead-oxide",
+    icon = "__angelssmeltinggraphics__/graphics/icons/solid-lead-oxide.png",
+    icon_size = 32,
+    subgroup = "angels-lead",
+    order = "d",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "angels-anode-lead",
+    icon = "__angelssmeltinggraphics__/graphics/icons/anode-lead.png",
+    icon_size = 32,
+    subgroup = "angels-lead",
+    order = "e",
+    stack_size = 200,
+  },
+  {
+    type = "fluid",
+    name = "angels-liquid-hexafluorosilicic-acid",
+    localised_description = show_formula and {
+      "tooltip-description.chemical-formula",
+      "F[font=default-tiny-bold]6[/font]H[font=default-tiny-bold]2[/font]Si",
+    } or nil,
+    icons = angelsmods.functions.create_liquid_fluid_icon(
+      { "__angelssmeltinggraphics__/graphics/icons/molecule-hexafluorosilicic-acid.png", 72 },
+      "SiFF"
+    ),
+    subgroup = "angels-lead",
+    order = "f",
+    default_temperature = 0,
+    heat_capacity = "1kJ",
+    base_color = { r = 209 / 255, g = 209 / 255, b = 209 / 255 },
+    flow_color = { r = 209 / 255, g = 209 / 255, b = 209 / 255 },
+    max_temperature = 0,
+  },
+  -- SMELTING RESULTS
+  {
+    type = "item",
+    name = "angels-ingot-lead",
+    icon = "__angelssmeltinggraphics__/graphics/icons/ingot-lead.png",
+    icon_size = 64,
+    subgroup = "angels-lead",
+    order = "g",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "angels-powder-lead",
+    icon = "__angelssmeltinggraphics__/graphics/icons/powder-lead.png",
+    icon_size = 64,
+    subgroup = "angels-lead",
+    order = "h",
+    stack_size = 200,
+  },
+  -- CASTING INTERMEDIATE
+  {
+    type = "fluid",
+    name = "angels-liquid-molten-lead",
+    icon = "__angelssmeltinggraphics__/graphics/icons/molten-lead.png",
+    icon_size = 64,
+    subgroup = "angels-lead-casting",
+    order = "i",
+    default_temperature = 327.5,
+    heat_capacity = "0kJ",
+    base_color = { r = 77 / 255, g = 78 / 255, b = 90 / 255 },
+    flow_color = { r = 77 / 255, g = 78 / 255, b = 90 / 255 },
+    max_temperature = 327.5,
+    auto_barrel = false,
+  },
+  {
+    type = "item",
+    name = "angels-roll-lead",
+    icon = "__angelssmeltinggraphics__/graphics/icons/roll-lead.png",
+    icon_size = 64,
+    subgroup = "angels-lead-casting",
+    order = "j",
+    stack_size = 200,
+  },
+  -- CASTING RESULT
+  {
+    type = "item",
+    name = "angels-plate-lead",
+    icon = "__angelssmeltinggraphics__/graphics/icons/plate-lead.png",
+    icon_size = 32,
+    subgroup = "angels-lead-casting",
+    order = "k",
+    stack_size = 200,
+  },
+})

@@ -1,0 +1,439 @@
+data.raw["radar"]["radar"].fast_replaceable_group = "radar"
+
+data:extend({
+  {
+    type = "radar",
+    name = "bob-radar-2",
+    icon = "__base__/graphics/icons/radar.png",
+    flags = { "placeable-player", "player-creation" },
+    minable = { mining_time = 0.5, result = "bob-radar-2" },
+    fast_replaceable_group = "radar",
+    max_health = 300,
+    corpse = "big-remnants",
+    dying_explosion = "radar-explosion",
+    damaged_trigger_effect = {
+      type = "create-entity",
+      damage_type_filters = "fire",
+      entity_name = "spark-explosion",
+      offset_deviation = { { -0.5, -0.5 }, { 0.5, 0.5 } },
+      offsets = { { 0, 1 } },
+    },
+    resistances = {
+      {
+        type = "fire",
+        percent = 70,
+      },
+      {
+        type = "impact",
+        percent = 30,
+      },
+    },
+    collision_box = { { -1.2, -1.2 }, { 1.2, 1.2 } },
+    selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
+    energy_per_sector = "10MJ",
+    max_distance_of_sector_revealed = 17,
+    max_distance_of_nearby_sector_revealed = 5,
+    energy_per_nearby_scan = "240kJ",
+    rotation_speed = 0.0125,
+    energy_source = {
+      type = "electric",
+      usage_priority = "secondary-input",
+    },
+    energy_usage = "450kW",
+    integration_patch = {
+      filename = "__base__/graphics/entity/radar/radar-integration.png",
+      priority = "low",
+      width = 238,
+      height = 216,
+      line_length = 1,
+      shift = util.by_pixel(1.5, 4),
+      scale = 0.5,
+    },
+    pictures = {
+      layers = {
+        {
+          filename = "__base__/graphics/entity/radar/radar.png",
+          priority = "low",
+          width = 196,
+          height = 254,
+          apply_projection = false,
+          direction_count = 64,
+          line_length = 8,
+          shift = util.by_pixel(1, -16),
+          scale = 0.5,
+        },
+        {
+          filename = "__base__/graphics/entity/radar/radar-shadow.png",
+          priority = "low",
+          width = 336,
+          height = 170,
+          apply_projection = false,
+          direction_count = 64,
+          line_length = 8,
+          shift = util.by_pixel(39, 6),
+          draw_as_shadow = true,
+          scale = 0.5,
+        },
+      },
+    },
+    water_reflection = {
+      orientation_to_variation = false,
+      rotate = false,
+      pictures = {
+        filename = "__base__/graphics/entity/radar/radar-reflection.png",
+        width = 28,
+        height = 32,
+        variation_count = 1,
+        priority = "extra-high",
+        scale = 5,
+        shift = {
+          0.15625,
+          1.09375,
+        },
+      },
+    },
+    impact_category = "metal",
+    working_sound = {
+      sound = {
+        {
+          filename = "__base__/sound/radar.ogg",
+        },
+      },
+    },
+    radius_minimap_visualisation_color = { r = 0.059, g = 0.092, b = 0.235, a = 0.275 },
+    is_military_target = false,
+    circuit_connector = circuit_connector_definitions["radar"],
+    circuit_wire_max_distance = 9,
+  },
+
+  {
+    type = "radar",
+    name = "bob-radar-3",
+    icon = "__base__/graphics/icons/radar.png",
+    flags = { "placeable-player", "player-creation" },
+    minable = { mining_time = 0.5, result = "bob-radar-3" },
+    fast_replaceable_group = "radar",
+    max_health = 350,
+    corpse = "big-remnants",
+    dying_explosion = "radar-explosion",
+    damaged_trigger_effect = {
+      type = "create-entity",
+      damage_type_filters = "fire",
+      entity_name = "spark-explosion",
+      offset_deviation = { { -0.5, -0.5 }, { 0.5, 0.5 } },
+      offsets = { { 0, 1 } },
+    },
+    resistances = {
+      {
+        type = "fire",
+        percent = 70,
+      },
+      {
+        type = "impact",
+        percent = 30,
+      },
+    },
+    collision_box = { { -1.2, -1.2 }, { 1.2, 1.2 } },
+    selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
+    energy_per_sector = "10MJ",
+    max_distance_of_sector_revealed = 20,
+    max_distance_of_nearby_sector_revealed = 7,
+    energy_per_nearby_scan = "230kJ",
+    rotation_speed = 0.015,
+    energy_source = {
+      type = "electric",
+      usage_priority = "secondary-input",
+    },
+    energy_usage = "600kW",
+    integration_patch = {
+      filename = "__base__/graphics/entity/radar/radar-integration.png",
+      priority = "low",
+      width = 238,
+      height = 216,
+      line_length = 1,
+      shift = util.by_pixel(1.5, 4),
+      scale = 0.5,
+    },
+    pictures = {
+      layers = {
+        {
+          filename = "__base__/graphics/entity/radar/radar.png",
+          priority = "low",
+          width = 196,
+          height = 254,
+          apply_projection = false,
+          direction_count = 64,
+          line_length = 8,
+          shift = util.by_pixel(1, -16),
+          scale = 0.5,
+        },
+        {
+          filename = "__base__/graphics/entity/radar/radar-shadow.png",
+          priority = "low",
+          width = 336,
+          height = 170,
+          apply_projection = false,
+          direction_count = 64,
+          line_length = 8,
+          shift = util.by_pixel(39, 6),
+          draw_as_shadow = true,
+          scale = 0.5,
+        },
+      },
+    },
+    water_reflection = {
+      orientation_to_variation = false,
+      rotate = false,
+      pictures = {
+        filename = "__base__/graphics/entity/radar/radar-reflection.png",
+        width = 28,
+        height = 32,
+        variation_count = 1,
+        priority = "extra-high",
+        scale = 5,
+        shift = {
+          0.15625,
+          1.09375,
+        },
+      },
+    },
+    impact_category = "metal",
+    working_sound = {
+      sound = {
+        {
+          filename = "__base__/sound/radar.ogg",
+        },
+      },
+    },
+    radius_minimap_visualisation_color = { r = 0.059, g = 0.092, b = 0.235, a = 0.275 },
+    is_military_target = false,
+    circuit_connector = circuit_connector_definitions["radar"],
+    circuit_wire_max_distance = 9,
+  },
+
+  {
+    type = "radar",
+    name = "bob-radar-4",
+    icon = "__base__/graphics/icons/radar.png",
+    flags = { "placeable-player", "player-creation" },
+    minable = { mining_time = 0.5, result = "bob-radar-4" },
+    fast_replaceable_group = "radar",
+    max_health = 400,
+    corpse = "big-remnants",
+    dying_explosion = "radar-explosion",
+    damaged_trigger_effect = {
+      type = "create-entity",
+      damage_type_filters = "fire",
+      entity_name = "spark-explosion",
+      offset_deviation = { { -0.5, -0.5 }, { 0.5, 0.5 } },
+      offsets = { { 0, 1 } },
+    },
+    resistances = {
+      {
+        type = "fire",
+        percent = 70,
+      },
+      {
+        type = "impact",
+        percent = 30,
+      },
+    },
+    collision_box = { { -1.2, -1.2 }, { 1.2, 1.2 } },
+    selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
+    energy_per_sector = "10MJ",
+    max_distance_of_sector_revealed = 23,
+    max_distance_of_nearby_sector_revealed = 9,
+    energy_per_nearby_scan = "220kJ",
+    rotation_speed = 0.0175,
+    energy_source = {
+      type = "electric",
+      usage_priority = "secondary-input",
+    },
+    energy_usage = "750kW",
+    integration_patch = {
+      filename = "__base__/graphics/entity/radar/radar-integration.png",
+      priority = "low",
+      width = 238,
+      height = 216,
+      line_length = 1,
+      shift = util.by_pixel(1.5, 4),
+      scale = 0.5,
+    },
+    pictures = {
+      layers = {
+        {
+          filename = "__base__/graphics/entity/radar/radar.png",
+          priority = "low",
+          width = 196,
+          height = 254,
+          apply_projection = false,
+          direction_count = 64,
+          line_length = 8,
+          shift = util.by_pixel(1, -16),
+          scale = 0.5,
+        },
+        {
+          filename = "__base__/graphics/entity/radar/radar-shadow.png",
+          priority = "low",
+          width = 336,
+          height = 170,
+          apply_projection = false,
+          direction_count = 64,
+          line_length = 8,
+          shift = util.by_pixel(39, 6),
+          draw_as_shadow = true,
+          scale = 0.5,
+        },
+      },
+    },
+    water_reflection = {
+      orientation_to_variation = false,
+      rotate = false,
+      pictures = {
+        filename = "__base__/graphics/entity/radar/radar-reflection.png",
+        width = 28,
+        height = 32,
+        variation_count = 1,
+        priority = "extra-high",
+        scale = 5,
+        shift = {
+          0.15625,
+          1.09375,
+        },
+      },
+    },
+    impact_category = "metal",
+    working_sound = {
+      sound = {
+        {
+          filename = "__base__/sound/radar.ogg",
+        },
+      },
+    },
+    radius_minimap_visualisation_color = { r = 0.059, g = 0.092, b = 0.235, a = 0.275 },
+    is_military_target = false,
+    circuit_connector = circuit_connector_definitions["radar"],
+    circuit_wire_max_distance = 9,
+  },
+
+  {
+    type = "radar",
+    name = "bob-radar-5",
+    icon = "__base__/graphics/icons/radar.png",
+    flags = { "placeable-player", "player-creation" },
+    minable = { mining_time = 0.5, result = "bob-radar-5" },
+    fast_replaceable_group = "radar",
+    max_health = 450,
+    corpse = "big-remnants",
+    dying_explosion = "radar-explosion",
+    damaged_trigger_effect = {
+      type = "create-entity",
+      damage_type_filters = "fire",
+      entity_name = "spark-explosion",
+      offset_deviation = { { -0.5, -0.5 }, { 0.5, 0.5 } },
+      offsets = { { 0, 1 } },
+    },
+    resistances = {
+      {
+        type = "fire",
+        percent = 70,
+      },
+      {
+        type = "impact",
+        percent = 30,
+      },
+    },
+    collision_box = { { -1.2, -1.2 }, { 1.2, 1.2 } },
+    selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
+    energy_per_sector = "10MJ",
+    max_distance_of_sector_revealed = 26,
+    max_distance_of_nearby_sector_revealed = 11,
+    energy_per_nearby_scan = "210kJ",
+    rotation_speed = 0.02,
+    energy_source = {
+      type = "electric",
+      usage_priority = "secondary-input",
+    },
+    energy_usage = "900kW",
+    integration_patch = {
+      filename = "__base__/graphics/entity/radar/radar-integration.png",
+      priority = "low",
+      width = 238,
+      height = 216,
+      line_length = 1,
+      shift = util.by_pixel(1.5, 4),
+      scale = 0.5,
+    },
+    pictures = {
+      layers = {
+        {
+          filename = "__base__/graphics/entity/radar/radar.png",
+          priority = "low",
+          width = 196,
+          height = 254,
+          apply_projection = false,
+          direction_count = 64,
+          line_length = 8,
+          shift = util.by_pixel(1, -16),
+          scale = 0.5,
+        },
+        {
+          filename = "__base__/graphics/entity/radar/radar-shadow.png",
+          priority = "low",
+          width = 336,
+          height = 170,
+          apply_projection = false,
+          direction_count = 64,
+          line_length = 8,
+          shift = util.by_pixel(39, 6),
+          draw_as_shadow = true,
+          scale = 0.5,
+        },
+      },
+    },
+    water_reflection = {
+      orientation_to_variation = false,
+      rotate = false,
+      pictures = {
+        filename = "__base__/graphics/entity/radar/radar-reflection.png",
+        width = 28,
+        height = 32,
+        variation_count = 1,
+        priority = "extra-high",
+        scale = 5,
+        shift = {
+          0.15625,
+          1.09375,
+        },
+      },
+    },
+    impact_category = "metal",
+    working_sound = {
+      sound = {
+        {
+          filename = "__base__/sound/radar.ogg",
+        },
+      },
+    },
+    radius_minimap_visualisation_color = { r = 0.059, g = 0.092, b = 0.235, a = 0.275 },
+    is_military_target = false,
+    circuit_connector = circuit_connector_definitions["radar"],
+    circuit_wire_max_distance = 9,
+  },
+})
+
+if feature_flags["freezing"] and mods["space-age"] then
+  data.raw.radar["bob-radar-2"].heating_energy = "300kW"
+  data.raw.radar["bob-radar-3"].heating_energy = "300kW"
+  data.raw.radar["bob-radar-4"].heating_energy = "300kW"
+  data.raw.radar["bob-radar-5"].heating_energy = "300kW"
+  local frozenpatch = data.raw.radar.radar.frozen_patch
+  data.raw.radar["bob-radar-2"].frozen_patch = frozenpatch
+  data.raw.radar["bob-radar-3"].frozen_patch = frozenpatch
+  data.raw.radar["bob-radar-4"].frozen_patch = frozenpatch
+  data.raw.radar["bob-radar-5"].frozen_patch = frozenpatch
+  data.raw.radar["bob-radar-2"].reset_orientation_when_frozen = true
+  data.raw.radar["bob-radar-3"].reset_orientation_when_frozen = true
+  data.raw.radar["bob-radar-4"].reset_orientation_when_frozen = true
+  data.raw.radar["bob-radar-5"].reset_orientation_when_frozen = true
+end

@@ -1,0 +1,77 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.3.13
+Date: xx.xx.xxxx
+  Changes:
+    - Fixed incorrect ordening of truck mk1 and mk2
+---------------------------------------------------------------------------------------------------
+Version: 0.3.12
+Date: 27.11.2020
+  Changes:
+    - Patched to work without angels (after oversight in last patch)
+---------------------------------------------------------------------------------------------------
+Version: 0.3.11
+Date: 26.11.2020
+  Changes:
+    - Updated to factorio version 1.1
+---------------------------------------------------------------------------------------------------
+Version: 0.3.10
+Date: 17.07.2020
+  Changes:
+    - Made localisation conform with base game (342)
+---------------------------------------------------------------------------------------------------
+Version: 0.3.9
+Date: 29.05.2020
+  Changes:
+    - Added nilaus truck mk2 for later game
+    - Properly use name, amount in result and ingredient prototypes
+---------------------------------------------------------------------------------------------------
+Version: 0.3.8
+Date: 10.04.2020
+  Changes:
+    - Made the grid 10x10 instead of 9x9
+---------------------------------------------------------------------------------------------------
+Version: 0.3.7
+Date: 03.04.2020
+  Bugfixes:
+    - Nilaus lamp would return small lamp #160
+---------------------------------------------------------------------------------------------------
+Version: 0.3.6
+Date: 02.04.2020
+  Changes:
+    - Updated grid size to a 9x9 grid (instead of default bob-cars size) #143
+    - Hide grid button when in vanilla, aka missing vehicle grid (car, vehicle, angels-...) #143
+    - Truck now stears as a car, not a tank #143
+---------------------------------------------------------------------------------------------------
+Version: 0.3.5
+Date: 24.03.2020
+  Changes:
+    - Fixed crash
+---------------------------------------------------------------------------------------------------
+Version: 0.3.4
+Date: 24.03.2020
+  Changes:
+    - Fixed crash
+---------------------------------------------------------------------------------------------------
+Version: 0.3.3
+Date: 24.03.2020
+  Changes:
+    - Fixed the TP bot...
+    - Changed localised names of nilaus decorations
+    - Added Nilaus' Floor Lamp
+---------------------------------------------------------------------------------------------------
+Version: 0.3.2
+Date: 22.03.2020
+  Changes:
+    - Tweakes some technologies, recipes and items after the previous update
+---------------------------------------------------------------------------------------------------
+Version: 0.3.1
+Date: 20.03.2020
+  Changes:
+    - Added technology prerequisites
+---------------------------------------------------------------------------------------------------
+Version: 0.3.0
+Date: 09.02.2020
+  Changes:
+    - update to 0.18
+    - Integrate into angels industries overhaul tabs
+    - Made sure the items gets unlocked by recipes
