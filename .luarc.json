@@ -3,7 +3,11 @@
 	"completion.keywordSnippet" : "Both",
 	"diagnostics.globals" : [
 		"data",
-		"storage"
+		"storage",
+		"defines",
+		"game",
+		"serpent",
+		"log"
 	],
 	"workspace.library" : ["./"]
 }

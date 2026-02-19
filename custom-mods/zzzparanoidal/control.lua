@@ -1,4 +1,5 @@
 require("prototypes.mod_compatibility.heroturrets_script") -- скрипт разжалования турелей
+local myVariable=0
 -- ##############################
 -- код для работы новых насосов
 local offshore_pump_types = {

@@ -15,12 +15,12 @@ if [[ $# < 1 ]]; then
 fi
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-apiFile="$SCRIPT_DIR/../factorio-apis/new/prototype-api2.0.73.json"
+apiFile="$SCRIPT_DIR/../factorio-apis/new/prototype-api.json"
 
 while getopts ':vh' flag; do
 	case "$flag" in
 		v)
-			apiFile="$SCRIPT_DIR/factorio-apis/old/prototype-api1.1.110.json"
+			apiFile="$SCRIPT_DIR/factorio-apis/old/prototype-api.json"
 			;;
 		h)
 			printHelpMessage "$0"

@@ -1,7 +1,7 @@
 require("prototypes.fuel")
 require("prototypes.washers")
 require("prototypes.seed-extractor")
-angelsmods.trigger.smelting_products["cobalt"].plate=true
+angelsmods.trigger.smelting_products["cobalt"].plate = true
 --новые насосы
 require("prototypes/offshore-pump/item")
 require("prototypes/offshore-pump/recipe")
@@ -28,31 +28,29 @@ require("prototypes.bio-content.bio-content-list") --Новый Биоконте
 -------------------------------------------------------------------------------------------------
 --перенаправляем функцию ангела на функцию боба
 if not mods["angelsindustries"] then
-
-function angelsmods.functions.OV.add_unlock(technology, recipe)
-    if
-      type(technology) == "string" and
-      type(recipe) == "string" and
-      data.raw.technology[technology] and
-      data.raw.recipe[recipe]
-    then
-        bobmods.lib.tech.add_recipe_unlock(technology, recipe)
-    end
-end
-
+	function angelsmods.functions.OV.add_unlock(technology, recipe)
+		if
+			type(technology) == "string"
+			and type(recipe) == "string"
+			and data.raw.technology[technology]
+			and data.raw.recipe[recipe]
+		then
+			bobmods.lib.tech.add_recipe_unlock(technology, recipe)
+		end
+	end
 end
 
 -- Uniform recipe mod
-for _,r in pairs(data.raw["recipe"]) do
-	r.always_show_products=true;
-	r.show_amount_in_title=false;
+for _, r in pairs(data.raw["recipe"]) do
+	r.always_show_products = true
+	r.show_amount_in_title = false
 	if r.normal ~= nil then
-  		r.normal.always_show_products = true;
-  		r.normal.show_amount_in_title = false;
+		r.normal.always_show_products = true
+		r.normal.show_amount_in_title = false
 	end
 	if r.expensive ~= nil then
- 	 	r.expensive.always_show_products = true;
-  		r.expensive.show_amount_in_title = false;
+		r.expensive.always_show_products = true
+		r.expensive.show_amount_in_title = false
 	end
 end
 -- Uniform recipe end
