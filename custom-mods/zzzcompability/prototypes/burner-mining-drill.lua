@@ -3,35 +3,27 @@
 ---Creates sprite
 ---@param filename string
 ---@param icon_size number | number[] must be 2^n
+---@param scale? number
 ---@return SpritePrototype
-local function CreateSprite(filename, icon_size)
-	return {
+local function CreateSprite(filename, icon_size, scale)
+	local sprite = {
 		filename = filename,
 		size = icon_size,
 	}
+	if scale then
+		sprite.scale = scale
+	end
+	return sprite
 end
 
 ---@param volume number must be positive
 ---@param pipe_connections PipeConnectionDefinition[]
----@param direction "input" | "output"
 ---@return FluidBox
 local function CreateFluidBoxTemplate(volume, pipe_connections)
-	local directions = { north = "N", east = "E", west = "W", south = "S" }
-	local pipe_covers = {}
-	local pipe_picture = {}
-	for dir, shorted in pairs(directions) do
-		pipe_covers[dir] = CreateSprite("__base__/graphics/entity/pipe-covers/pipe-cover-" .. dir .. ".png", 32)
-		pipe_picture[dir] = CreateSprite(
-			"__base__/graphics/entity/assembling-machine-2/assembling-machine-2-pipe-" .. shorted .. ".png",
-			32
-		)
-	end
 	return {
 		volume = volume,
 		pipe_connections = pipe_connections,
 		production_type = "input",
-		pipe_covers = pipe_covers,
-		pipe_picture = pipe_picture
 	}
 end
 
@@ -47,7 +39,7 @@ local function CreatePipeConnectionToCollisionBox(bbox, flow_direction, directio
 	if not anchor then
 		error("No map position found in BoundingBox: " .. serpent.block(bbox))
 	end
-	anchor = { (anchor[1] or anchor.x), (anchor[2] or anchor.y) }
+	anchor = { (anchor[1] or anchor.x) / 2, (anchor[2] or anchor.y) / 2 }
 	return {
 		flow_direction = flow_direction,
 		direction = direction or defines.direction.south,

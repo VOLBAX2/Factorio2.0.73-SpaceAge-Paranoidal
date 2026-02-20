@@ -36,8 +36,6 @@ require("prototypes.mod_compatibility.Transport_Drones")
 require("prototypes.mod_compatibility.JunkTrain")
 
 -------------------------------------------------------------------------------------------------
-require("prototypes.Angels_RBOS") --Angels_RBOS Angel's Re-enabled Basic Ore Smelting
--------------------------------------------------------------------------------------------------
 -- require("prototypes.offshore-pump.animation") --анимация для новых насосов -- relies on osm-lib which is deprecated
 require("prototypes.offshore-pump.offshore-final-fix") --финальные фиксы для новых насосов
 -------------------------------------------------------------------------------------------------

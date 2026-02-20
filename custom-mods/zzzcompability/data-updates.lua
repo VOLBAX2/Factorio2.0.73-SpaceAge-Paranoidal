@@ -1,3 +1,6 @@
 require("fixes.Bio_Industries_2")
-require("prototypes.burner-mining-drill")
+
+if mods["aai-industry"] then
+	require("prototypes.burner-mining-drill")
+end
 
