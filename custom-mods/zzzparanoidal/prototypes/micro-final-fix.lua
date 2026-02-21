@@ -75,8 +75,8 @@ bobmods.lib.recipe.set_ingredient("landfill", { type = "item", name = "stone", a
 
 -- Seems like already fixed
 --фикс стрелок порта для сероводорода промывочных машин
-data.raw["assembling-machine"]["washing-plant"].fluid_boxes[4].pipe_connections[1].type = "output"
-data.raw["assembling-machine"]["washing-plant-2"].fluid_boxes[4].pipe_connections[1].type = "output"
+data.raw["assembling-machine"]["angels-washing-plant"].fluid_boxes[4].pipe_connections[1].type = "output"
+data.raw["assembling-machine"]["angels-washing-plant-2"].fluid_boxes[4].pipe_connections[1].type = "output"
 
 
 --###############################################################################################

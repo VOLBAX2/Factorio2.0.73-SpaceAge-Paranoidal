@@ -1,6 +1,6 @@
 --BOBS + VANILLA
 
-bobmods.lib.recipe.add_new_ingredient("submachine-gun", { type = "gun", name = "pistol", amount = 2 })
+bobmods.lib.recipe.add_new_ingredient("submachine-gun", { type = "item", name = "pistol", amount = 2 })
 
 bobmods.lib.recipe.remove_ingredient("bob-logistic-robot-2", "logistic-robot")
 bobmods.lib.recipe.remove_ingredient("bob-construction-robot-2", "construction-robot")
@@ -365,12 +365,12 @@ bobmods.lib.recipe.add_new_ingredient("angels-salination-plant-2", { type = "ite
 bobmods.lib.recipe.remove_ingredient("angels-washing-plant-2", "angels-washing-plant")
 bobmods.lib.recipe.add_new_ingredient("angels-washing-plant-2", { type = "item", name = "angels-washing-plant", amount = 2 })
 if data.raw.item["angels-washing-plant-3"] then
-	bobmods.lib.recipe.remove_ingredient("washing-plant-3", "angels-washing-plant-2")
-	bobmods.lib.recipe.add_new_ingredient("washing-plant-3", { type = "item", name = "angels-washing-plant-2", amount = 2 })
+	bobmods.lib.recipe.remove_ingredient("angels-washing-plant-3", "angels-washing-plant-2")
+	bobmods.lib.recipe.add_new_ingredient("angels-washing-plant-3", { type = "item", name = "angels-washing-plant-2", amount = 2 })
 end
 if data.raw.item["angels-washing-plant-4"] then
-	bobmods.lib.recipe.remove_ingredient("washing-plant-4", "washing-plant-3")
-	bobmods.lib.recipe.add_new_ingredient("washing-plant-4", { type = "item", name = "washing-plant-3", amount = 2 })
+	bobmods.lib.recipe.remove_ingredient("angels-washing-plant-4", "angels-washing-plant-3")
+	bobmods.lib.recipe.add_new_ingredient("angels-washing-plant-4", { type = "item", name = "angels-washing-plant-3", amount = 2 })
 end
 
 bobmods.lib.recipe.remove_ingredient("angels-electric-boiler-2", "angels-electric-boiler")

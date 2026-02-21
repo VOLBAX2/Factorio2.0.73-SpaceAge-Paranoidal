@@ -10,7 +10,7 @@ bobmods.lib.tech.remove_prerequisite("transport-system", "engine")
 bobmods.lib.tech.remove_prerequisite("transport-system", "angels-oil-processing")
 bobmods.lib.tech.add_prerequisite("transport-system", "steel-processing")
 bobmods.lib.tech.add_prerequisite("transport-system", "angels-fluid-control")
-bobmods.lib.tech.add_prerequisite("transport-system", "basic-chemistry-2")
+bobmods.lib.tech.add_prerequisite("transport-system", "angels-basic-chemistry-2")
 
 bobmods.lib.tech.remove_science_pack("transport-system", "logistic-science-pack")
 -------------------------------------------------------------------------------------------------

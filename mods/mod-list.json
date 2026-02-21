@@ -64,6 +64,11 @@
     },
     
     {
+      "name": "angelsaddons-liquidrobot",
+      "enabled": false
+    },
+    
+    {
       "name": "angelsaddons-mobility",
       "enabled": true
     },
@@ -84,7 +89,22 @@
     },
     
     {
+      "name": "angelsaddons-nilaus",
+      "enabled": false
+    },
+    
+    {
+      "name": "angelsaddons-shred",
+      "enabled": false
+    },
+    
+    {
       "name": "angelsaddons-storage",
+      "enabled": true
+    },
+    
+    {
+      "name": "angelsbioprocessing",
       "enabled": true
     },
     
@@ -94,13 +114,18 @@
     },
     
     {
+      "name": "angelsdev-unit-test",
+      "enabled": false
+    },
+    
+    {
       "name": "angelsexploration",
-      "enabled": true
+      "enabled": false
     },
     
     {
       "name": "angelsexplorationgraphics",
-      "enabled": true
+      "enabled": false
     },
     
     {
