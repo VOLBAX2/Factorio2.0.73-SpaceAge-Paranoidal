@@ -10,7 +10,7 @@ data:extend({
 		enabled = "false",
 		energy_required = 6,
 		ingredients = { { type = "item", name = "cobalt-steel-alloy", amount = 4 } },
-		results = { { type = "fluid", name = "liquid-molten-cobalt-steel", amount = 35 } },
+		results = { { type = "fluid", name = "angels-liquid-molten-cobalt-steel", amount = 35 } },
 
 		icons = {
 			{
@@ -36,10 +36,10 @@ data:extend({
 		enabled = "false",
 		energy_required = 4,
 		ingredients = {
-			{ type = "fluid", name = "liquid-molten-steel", amount = 240 },
-			{ type = "fluid", name = "liquid-molten-cobalt", amount = 120 },
+			{ type = "fluid", name = "angels-liquid-molten-steel", amount = 240 },
+			{ type = "fluid", name = "angels-liquid-molten-cobalt", amount = 120 },
 		},
-		results = { { type = "fluid", name = "liquid-molten-cobalt-steel", amount = 360 } },
+		results = { { type = "fluid", name = "angels-liquid-molten-cobalt-steel", amount = 360 } },
 		icons = {
 			{
 				icon = "__angelssmelting__/graphics/icons/molten-cobalt-steel.png",

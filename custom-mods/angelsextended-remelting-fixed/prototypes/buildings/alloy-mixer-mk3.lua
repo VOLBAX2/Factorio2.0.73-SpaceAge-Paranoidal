@@ -48,7 +48,7 @@ data:extend({
 			{ type = "item", name = "alloy-mixer-2", amount = 1 },
 			{ type = "item", name = "aluminium-plate", amount = 20 },
 			{ type = "item", name = "advanced-circuit", amount = 5 },
-			{ type = "item", name = "concrete-brick", amount = 25 },
+			{ type = "item", name = "angels-concrete-brick", amount = 25 },
 			{ type = "item", name = "brass-gear-wheel", amount = 9 },
 			{ type = "item", name = "brass-pipe", amount = 12 },
 		},

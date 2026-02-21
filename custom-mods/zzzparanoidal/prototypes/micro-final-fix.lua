@@ -83,7 +83,7 @@ data.raw["assembling-machine"]["angels-washing-plant-2"].fluid_boxes[4].pipe_con
 --Последние правки Space X
 data.raw["assembling-machine"]["space-telescope-uplink-station"].icon =
 	"__expanded-rocket-payloads-continued__/graphic/space-telescope-uplink-station-32.png" --фикс неправильной иконки
-data.raw["recipe"]["osmium-ore-processing"].category = "ore-processing-4" --фикс слишком легкого осмия
+data.raw["recipe"]["osmium-ore-processing"].category = "angels-ore-processing-4" --фикс слишком легкого осмия
 data.raw["recipe"]["osmium-processed-processing"].category = "pellet-pressing-4" --фикс слишком легкого осмия
 data.raw["recipe"]["osmium-pellet-smelting"].category = "blast-smelting-4" --фикс слишком легкого осмия
 data.raw["recipe"]["casting-powder-osmium"].category = "powder-mixing-4" --фикс слишком легкого осмия
@@ -91,8 +91,8 @@ bobmods.lib.tech.add_prerequisite("astrometrics", "advanced-osmium-smelting") --
 bobmods.lib.tech.add_recipe_unlock("bi-tech-stone-crushing-1", "stone-crushed-2") --открываем рецепт камня
 data.raw["rocket-silo"]["rocket-silo"].energy_usage = "250000kW" --увеличиваем потребление энергии ракетной шахтой
 data.raw["rocket-silo"]["rocket-silo"].module_specification.module_slots = 6 --но добавляем ей больше слотов модулей
-bobmods.lib.tech.add_prerequisite("advanced-osmium-smelting", "ore-processing-5") --фикс дерева осмия
-bobmods.lib.tech.add_prerequisite("advanced-osmium-smelting", "powder-metallurgy-5") --фикс дерева осмия
+bobmods.lib.tech.add_prerequisite("advanced-osmium-smelting", "angels-ore-processing-5") --фикс дерева осмия
+bobmods.lib.tech.add_prerequisite("advanced-osmium-smelting", "angels-powder-metallurgy-5") --фикс дерева осмия
 bobmods.lib.tech.remove_prerequisite("spidertron", "radars-1") --фикс паукатрона
 --###############################################################################################
 --Баланс телепортера под параноидал

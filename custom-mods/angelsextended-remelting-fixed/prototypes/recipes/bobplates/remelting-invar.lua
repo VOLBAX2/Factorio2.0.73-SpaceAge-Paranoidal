@@ -10,7 +10,7 @@ data:extend({
 		enabled = "false",
 		energy_required = 6,
 		ingredients = { { type = "item", name = "invar-alloy", amount = 4 } },
-		results = { { type = "fluid", name = "liquid-molten-invar", amount = 35 } },
+		results = { { type = "fluid", name = "angels-liquid-molten-invar", amount = 35 } },
 
 		icons = {
 			{
@@ -36,10 +36,10 @@ data:extend({
 		enabled = "false",
 		energy_required = 4,
 		ingredients = {
-			{ type = "fluid", name = "liquid-molten-steel", amount = 240 },
-			{ type = "fluid", name = "liquid-molten-nickel", amount = 120 },
+			{ type = "fluid", name = "angels-liquid-molten-steel", amount = 240 },
+			{ type = "fluid", name = "angels-liquid-molten-nickel", amount = 120 },
 		},
-		results = { { type = "fluid", name = "liquid-molten-invar", amount = 360 } },
+		results = { { type = "fluid", name = "angels-liquid-molten-invar", amount = 360 } },
 		icons = {
 			{
 				icon = "__angelssmelting__/graphics/icons/molten-invar.png",

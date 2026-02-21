@@ -10,7 +10,7 @@ data:extend({
 		energy_required = 6,
 		enabled = "false",
 		ingredients = { { type = "item", name = "angels-solder", amount = 4 } },
-		results = { { type = "fluid", name = "liquid-molten-solder", amount = 15 } },
+		results = { { type = "fluid", name = "angels-liquid-molten-solder", amount = 15 } },
 
 		icons = {
 			{
@@ -36,10 +36,10 @@ data:extend({
 		enabled = "false",
 		energy_required = 4,
 		ingredients = {
-			{ type = "fluid", name = "liquid-molten-tin", amount = 120 },
-			{ type = "fluid", name = "liquid-molten-lead", amount = 120 },
+			{ type = "fluid", name = "angels-liquid-molten-tin", amount = 120 },
+			{ type = "fluid", name = "angels-liquid-molten-lead", amount = 120 },
 		},
-		results = { { type = "fluid", name = "liquid-molten-solder", amount = 240 } },
+		results = { { type = "fluid", name = "angels-liquid-molten-solder", amount = 240 } },
 		icons = {
 			{
 				icon = "__angelssmelting__/graphics/icons/molten-solder.png",
@@ -62,10 +62,10 @@ data:extend({
 		enabled = "false",
 		energy_required = 4,
 		ingredients = {
-			{ type = "fluid", name = "liquid-molten-tin", amount = 120 },
-			{ type = "fluid", name = "liquid-molten-zinc", amount = 120 },
+			{ type = "fluid", name = "angels-liquid-molten-tin", amount = 120 },
+			{ type = "fluid", name = "angels-liquid-molten-zinc", amount = 120 },
 		},
-		results = { { type = "fluid", name = "liquid-molten-solder", amount = 240 } },
+		results = { { type = "fluid", name = "angels-liquid-molten-solder", amount = 240 } },
 		icons = {
 			{
 				icon = "__angelssmelting__/graphics/icons/molten-solder.png",
@@ -88,11 +88,11 @@ data:extend({
 		enabled = "false",
 		energy_required = 4,
 		ingredients = {
-			{ type = "fluid", name = "liquid-molten-tin", amount = 120 },
-			{ type = "fluid", name = "liquid-molten-copper", amount = 120 },
-			{ type = "fluid", name = "liquid-molten-silver", amount = 120 },
+			{ type = "fluid", name = "angels-liquid-molten-tin", amount = 120 },
+			{ type = "fluid", name = "angels-liquid-molten-copper", amount = 120 },
+			{ type = "fluid", name = "angels-liquid-molten-silver", amount = 120 },
 		},
-		results = { { type = "fluid", name = "liquid-molten-solder", amount = 360 } },
+		results = { { type = "fluid", name = "angels-liquid-molten-solder", amount = 360 } },
 		icons = {
 			{
 				icon = "__angelssmelting__/graphics/icons/molten-solder.png",

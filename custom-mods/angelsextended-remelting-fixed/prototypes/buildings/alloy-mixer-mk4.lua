@@ -48,7 +48,7 @@ data:extend({
 			{ type = "item", name = "alloy-mixer-3", amount = 1 },
 			{ type = "item", name = "titanium-plate", amount = 20 },
 			{ type = "item", name = "processing-unit", amount = 5 },
-			{ type = "item", name = "reinforced-concrete-brick", amount = 25 },
+			{ type = "item", name = "angels-reinforced-concrete-brick", amount = 25 },
 			{ type = "item", name = "titanium-gear-wheel", amount = 9 },
 			{ type = "item", name = "titanium-pipe", amount = 12 },
 		},

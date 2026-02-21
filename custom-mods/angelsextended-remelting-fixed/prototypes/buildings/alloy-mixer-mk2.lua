@@ -48,7 +48,7 @@ data:extend({
 			{ type = "item", name = "alloy-mixer", amount = 1 },
 			{ type = "item", name = "steel-plate", amount = 25 },
 			{ type = "item", name = "electronic-circuit", amount = 5 },
-			{ type = "item", name = "clay-brick", amount = 25 },
+			{ type = "item", name = "angels-clay-brick", amount = 25 },
 			{ type = "item", name = "steel-gear-wheel", amount = 9 },
 			{ type = "item", name = "steel-pipe", amount = 12 },
 		},

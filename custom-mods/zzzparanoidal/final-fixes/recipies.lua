@@ -82,7 +82,7 @@ bobmods.lib.recipe.set_ingredients("angels-liquifier-2", {
 	{ type = "item", name = "bob-bronze-alloy", amount = 40 },
 	{ type = "item", name = "electronic-circuit", amount = 3 },
 	{ type = "item", name = "bob-bronze-pipe", amount = 40 },
-	{ type = "item", name = "clay-brick", amount = 60 },
+	{ type = "item", name = "angels-clay-brick", amount = 60 },
 	{ type = "item", name = "angels-liquifier", amount = 2 },
 })
 bobmods.lib.recipe.set_ingredients("angels-liquifier-3", {

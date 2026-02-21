@@ -10,7 +10,7 @@ data:extend({
 		enabled = "false",
 		energy_required = 6,
 		ingredients = { { type = "item", name = "angels-plate-glass", amount = 4 } },
-		results = { { type = "fluid", name = "liquid-molten-glass", amount = 10 } },
+		results = { { type = "fluid", name = "angels-liquid-molten-glass", amount = 10 } },
 
 		icons = {
 			{

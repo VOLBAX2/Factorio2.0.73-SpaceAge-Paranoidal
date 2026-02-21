@@ -36,9 +36,9 @@ data:extend({
 		enabled = "false",
 		energy_required = 4,
 		ingredients = {
-			{ type = "fluid", name = "liquid-molten-copper", amount = 180 },
-			{ type = "fluid", name = "liquid-molten-zinc", amount = 120 },
-			{ type = "fluid", name = "liquid-molten-tin", amount = 60 },
+			{ type = "fluid", name = "angels-liquid-molten-copper", amount = 180 },
+			{ type = "fluid", name = "angels-liquid-molten-zinc", amount = 120 },
+			{ type = "fluid", name = "angels-liquid-molten-tin", amount = 60 },
 		},
 		results = { { type = "fluid", name = "liquid-molten-gunmetal", amount = 360 } },
 		icons = {

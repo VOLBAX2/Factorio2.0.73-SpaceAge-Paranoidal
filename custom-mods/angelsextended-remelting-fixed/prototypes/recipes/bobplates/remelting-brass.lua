@@ -10,7 +10,7 @@ data:extend({
 		enabled = "false",
 		energy_required = 6,
 		ingredients = { { type = "item", name = "brass-alloy", amount = 4 } },
-		results = { { type = "fluid", name = "liquid-molten-brass", amount = 35 } },
+		results = { { type = "fluid", name = "angels-liquid-molten-brass", amount = 35 } },
 
 		icons = {
 			{
@@ -36,10 +36,10 @@ data:extend({
 		enabled = "false",
 		energy_required = 4,
 		ingredients = {
-			{ type = "fluid", name = "liquid-molten-copper", amount = 180 },
-			{ type = "fluid", name = "liquid-molten-zinc", amount = 60 },
+			{ type = "fluid", name = "angels-liquid-molten-copper", amount = 180 },
+			{ type = "fluid", name = "angels-liquid-molten-zinc", amount = 60 },
 		},
-		results = { { type = "fluid", name = "liquid-molten-brass", amount = 240 } },
+		results = { { type = "fluid", name = "angels-liquid-molten-brass", amount = 240 } },
 		icons = {
 			{
 				icon = "__angelssmelting__/graphics/icons/molten-brass.png",
@@ -62,11 +62,11 @@ data:extend({
 		enabled = "false",
 		energy_required = 4,
 		ingredients = {
-			{ type = "fluid", name = "liquid-molten-copper", amount = 180 },
-			{ type = "fluid", name = "liquid-molten-zinc", amount = 120 },
-			{ type = "fluid", name = "liquid-molten-tin", amount = 60 },
+			{ type = "fluid", name = "angels-liquid-molten-copper", amount = 180 },
+			{ type = "fluid", name = "angels-liquid-molten-zinc", amount = 120 },
+			{ type = "fluid", name = "angels-liquid-molten-tin", amount = 60 },
 		},
-		results = { { type = "fluid", name = "liquid-molten-brass", amount = 360 } },
+		results = { { type = "fluid", name = "angels-liquid-molten-brass", amount = 360 } },
 		icons = {
 			{
 				icon = "__angelssmelting__/graphics/icons/molten-brass.png",
@@ -89,11 +89,11 @@ data:extend({
 		enabled = "false",
 		energy_required = 4,
 		ingredients = {
-			{ type = "fluid", name = "liquid-molten-copper", amount = 180 },
-			{ type = "fluid", name = "liquid-molten-zinc", amount = 120 },
-			{ type = "fluid", name = "liquid-molten-lead", amount = 60 },
+			{ type = "fluid", name = "angels-liquid-molten-copper", amount = 180 },
+			{ type = "fluid", name = "angels-liquid-molten-zinc", amount = 120 },
+			{ type = "fluid", name = "angels-liquid-molten-lead", amount = 60 },
 		},
-		results = { { type = "fluid", name = "liquid-molten-brass", amount = 360 } },
+		results = { { type = "fluid", name = "angels-liquid-molten-brass", amount = 360 } },
 		icons = {
 			{
 				icon = "__angelssmelting__/graphics/icons/molten-brass.png",

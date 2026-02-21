@@ -338,7 +338,7 @@ data:extend({
 			enabled = false,
 			energy_required = 4,
 			ingredients = {
-				{ type = "fluid", name = "liquid-molten-iron", amount = 80 },
+				{ type = "fluid", name = "angels-liquid-molten-iron", amount = 80 },
 				{ type = "fluid", name = "water", amount = 40 },
 			},
 			results = { { type = "item", name = "angels-iron-gear-wheel-stack", amount = 2 } },
@@ -347,7 +347,7 @@ data:extend({
 			enabled = false,
 			energy_required = 4,
 			ingredients = {
-				{ type = "fluid", name = "liquid-molten-iron", amount = 100 },
+				{ type = "fluid", name = "angels-liquid-molten-iron", amount = 100 },
 				{ type = "fluid", name = "water", amount = 40 },
 			},
 			results = { { type = "item", name = "angels-iron-gear-wheel-stack", amount = 2 } },
@@ -377,12 +377,12 @@ data:extend({
 			enabled = false,
 			energy_required = 2,
 			ingredients = {
-				{ type = "fluid", name = "liquid-molten-iron", amount = 140 },
-				{ type = "fluid", name = "liquid-coolant", amount = 40, maximum_temperature = 50 },
+				{ type = "fluid", name = "angels-liquid-molten-iron", amount = 140 },
+				{ type = "fluid", name = "angels-liquid-coolant", amount = 40, maximum_temperature = 50 },
 			},
 			results = {
 				{ type = "item", name = "angels-iron-gear-wheel-stack", amount = 4 },
-				{ type = "fluid", name = "liquid-coolant-used", amount = 40, temperature = 300 },
+				{ type = "fluid", name = "angels-liquid-coolant-used", amount = 40, temperature = 300 },
 			},
 			main_product = "angels-iron-gear-wheel-stack",
 		},
@@ -390,12 +390,12 @@ data:extend({
 			enabled = false,
 			energy_required = 2,
 			ingredients = {
-				{ type = "fluid", name = "liquid-molten-iron", amount = 180 },
-				{ type = "fluid", name = "liquid-coolant", amount = 40, maximum_temperature = 50 },
+				{ type = "fluid", name = "angels-liquid-molten-iron", amount = 180 },
+				{ type = "fluid", name = "angels-liquid-coolant", amount = 40, maximum_temperature = 50 },
 			},
 			results = {
 				{ type = "item", name = "angels-iron-gear-wheel-stack", amount = 4 },
-				{ type = "fluid", name = "liquid-coolant-used", amount = 40, temperature = 300 },
+				{ type = "fluid", name = "angels-liquid-coolant-used", amount = 40, temperature = 300 },
 			},
 			main_product = "angels-iron-gear-wheel-stack",
 		},
@@ -425,7 +425,7 @@ data:extend({
 			enabled = false,
 			energy_required = 4,
 			ingredients = {
-				{ type = "fluid", name = "liquid-molten-steel", amount = 80 },
+				{ type = "fluid", name = "angels-liquid-molten-steel", amount = 80 },
 				{ type = "fluid", name = "water", amount = 40 },
 			},
 			results = { { type = "item", name = "angels-steel-gear-wheel-stack", amount = 2 } },
@@ -434,7 +434,7 @@ data:extend({
 			enabled = false,
 			energy_required = 4,
 			ingredients = {
-				{ type = "fluid", name = "liquid-molten-steel", amount = 100 },
+				{ type = "fluid", name = "angels-liquid-molten-steel", amount = 100 },
 				{ type = "fluid", name = "water", amount = 40 },
 			},
 			results = { { type = "item", name = "angels-steel-gear-wheel-stack", amount = 2 } },
@@ -464,12 +464,12 @@ data:extend({
 			enabled = false,
 			energy_required = 2,
 			ingredients = {
-				{ type = "fluid", name = "liquid-molten-steel", amount = 140 },
-				{ type = "fluid", name = "liquid-coolant", amount = 40, maximum_temperature = 50 },
+				{ type = "fluid", name = "angels-liquid-molten-steel", amount = 140 },
+				{ type = "fluid", name = "angels-liquid-coolant", amount = 40, maximum_temperature = 50 },
 			},
 			results = {
 				{ type = "item", name = "angels-steel-gear-wheel-stack", amount = 4 },
-				{ type = "fluid", name = "liquid-coolant-used", amount = 40, temperature = 300 },
+				{ type = "fluid", name = "angels-liquid-coolant-used", amount = 40, temperature = 300 },
 			},
 			main_product = "angels-steel-gear-wheel-stack",
 		},
@@ -477,12 +477,12 @@ data:extend({
 			enabled = false,
 			energy_required = 2,
 			ingredients = {
-				{ type = "fluid", name = "liquid-molten-steel", amount = 180 },
-				{ type = "fluid", name = "liquid-coolant", amount = 40, maximum_temperature = 50 },
+				{ type = "fluid", name = "angels-liquid-molten-steel", amount = 180 },
+				{ type = "fluid", name = "angels-liquid-coolant", amount = 40, maximum_temperature = 50 },
 			},
 			results = {
 				{ type = "item", name = "angels-steel-gear-wheel-stack", amount = 4 },
-				{ type = "fluid", name = "liquid-coolant-used", amount = 40, temperature = 300 },
+				{ type = "fluid", name = "angels-liquid-coolant-used", amount = 40, temperature = 300 },
 			},
 			main_product = "angels-steel-gear-wheel-stack",
 		},

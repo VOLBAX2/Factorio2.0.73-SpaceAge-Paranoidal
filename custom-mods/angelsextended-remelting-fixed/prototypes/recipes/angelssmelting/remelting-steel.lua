@@ -10,7 +10,7 @@ data:extend({
 		enabled = "false",
 		energy_required = 6,
 		ingredients = { { type = "item", name = "angels-plate-steel", amount = 4 } },
-		results = { { type = "fluid", name = "liquid-molten-steel", amount = 15 } },
+		results = { { type = "fluid", name = "angels-liquid-molten-steel", amount = 15 } },
 
 		icons = {
 			{
@@ -36,10 +36,10 @@ data:extend({
 		enabled = "false",
 		energy_required = 4,
 		ingredients = {
-			{ type = "fluid", name = "liquid-molten-iron", amount = 240 },
+			{ type = "fluid", name = "angels-liquid-molten-iron", amount = 240 },
 			{ type = "fluid", name = "gas-oxygen", amount = 60 },
 		},
-		results = { { type = "fluid", name = "liquid-molten-steel", amount = 60 } },
+		results = { { type = "fluid", name = "angels-liquid-molten-steel", amount = 60 } },
 		icons = {
 			{
 				icon = "__angelssmelting__/graphics/icons/molten-steel.png",
@@ -62,11 +62,11 @@ data:extend({
 		enabled = "false",
 		energy_required = 4,
 		ingredients = {
-			{ type = "fluid", name = "liquid-molten-iron", amount = 480 },
-			{ type = "fluid", name = "liquid-molten-silicon", amount = 120 },
+			{ type = "fluid", name = "angels-liquid-molten-iron", amount = 480 },
+			{ type = "fluid", name = "angels-liquid-molten-silicon", amount = 120 },
 			{ type = "fluid", name = "gas-oxygen", amount = 120 },
 		},
-		results = { { type = "fluid", name = "liquid-molten-steel", amount = 240 } },
+		results = { { type = "fluid", name = "angels-liquid-molten-steel", amount = 240 } },
 		icons = {
 			{
 				icon = "__angelssmelting__/graphics/icons/molten-steel.png",
@@ -89,11 +89,11 @@ data:extend({
 		enabled = "false",
 		energy_required = 4,
 		ingredients = {
-			{ type = "fluid", name = "liquid-molten-iron", amount = 480 },
-			{ type = "fluid", name = "liquid-molten-manganese", amount = 120 },
+			{ type = "fluid", name = "angels-liquid-molten-iron", amount = 480 },
+			{ type = "fluid", name = "angels-liquid-molten-manganese", amount = 120 },
 			{ type = "fluid", name = "gas-oxygen", amount = 120 },
 		},
-		results = { { type = "fluid", name = "liquid-molten-steel", amount = 240 } },
+		results = { { type = "fluid", name = "angels-liquid-molten-steel", amount = 240 } },
 		icons = {
 			{
 				icon = "__angelssmelting__/graphics/icons/molten-steel.png",
@@ -116,12 +116,12 @@ data:extend({
 		enabled = "false",
 		energy_required = 4,
 		ingredients = {
-			{ type = "fluid", name = "liquid-molten-iron", amount = 240 },
-			{ type = "fluid", name = "liquid-molten-chrome", amount = 120 },
+			{ type = "fluid", name = "angels-liquid-molten-iron", amount = 240 },
+			{ type = "fluid", name = "angels-liquid-molten-chrome", amount = 120 },
 			{ type = "fluid", name = "gas-oxygen", amount = 60 },
-			{ type = "item", name = "powder-tungsten", amount = 12 },
+			{ type = "item", name = "angels-powder-tungsten", amount = 12 },
 		},
-		results = { { type = "fluid", name = "liquid-molten-steel", amount = 440 } },
+		results = { { type = "fluid", name = "angels-liquid-molten-steel", amount = 440 } },
 		icons = {
 			{
 				icon = "__angelssmelting__/graphics/icons/molten-steel.png",
