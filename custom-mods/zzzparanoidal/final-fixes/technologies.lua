@@ -122,11 +122,7 @@ bobmods.lib.tech.remove_prerequisite("advanced-osmium-smelting", "powder-metallu
 bobmods.lib.tech.remove_recipe_unlock("nuclear-power", "steam-turbine") --удаляем вторую турбину мк1 (AKMF)
 bobmods.lib.tech.add_prerequisite("bob-steam-turbine-1", "nuclear-power") --добавить теху в ядерку
 
-if data.raw["technology"]["radars-1"] then
-	data.raw["technology"]["radars-1"].hidden = true --Убираем лишнее исследование на радар
-end
 bobmods.lib.tech.add_prerequisite("radars-2", "radar") --Добавим радар1 к радару2
-bobmods.lib.tech.remove_prerequisite("radars-2", "radars-1") --фикс радара 2
 
 bobmods.lib.tech.remove_recipe_unlock("bob-tungsten-alloy-processing", "bob-tungsten-carbide-2x")
 data.raw["recipe"]["bob-tungsten-carbide-2x"].hidden = true
@@ -443,3 +439,84 @@ bobmods.lib.tech.add_recipe_unlock("bob-nitinol-processing", "angels-nitinol-pip
 
 --Для сборщика электроники нужны фиол. манипуляторы (AKMF)
 bobmods.lib.tech.add_prerequisite("bob-electronics-machine-3", "bob-turbo-inserter")
+
+--Финальный Ремонт дерева исследований
+bobmods.lib.tech.remove_prerequisite("radar", "electronics") --фикс радара
+-- bobmods.lib.tech.add_prerequisite ("radar", "bob-electricity") --фикс радара
+bobmods.lib.recipe.set_ingredients(
+	"radar",
+	{ { type = "item", name = "electric-motor", amount = 12}, { type = "item", name = "bob-basic-circuit-board", amount = 20}, { type = "item", name = "stone-brick", amount = 20}, { type = "item", name = "iron-plate", amount = 20} }
+) --фикс радара
+bobmods.lib.tech.add_prerequisite("bob-nuclear-power-2", "centrifuging-1") --ториевая энергетика под Продвинутое центрифугирование 1
+bobmods.lib.tech.add_prerequisite("bob-area-drills-2", "bob-drills-2") --фикс буров
+bobmods.lib.tech.add_prerequisite("bob-area-drills-3", "bob-drills-3") --фикс буров
+bobmods.lib.tech.add_prerequisite("rocket-silo", "bob-area-drills-3") --фикс буров
+bobmods.lib.tech.add_prerequisite("bob-battery-3", "powder-metallurgy-5") --Аккумулятор 3 поставить под Порошковая металлургия 4
+bobmods.lib.tech.remove_recipe_unlock("bob-advanced-processing-unit", "intelligent-io") -- Интеллектуальное арифметико-логическое устройство под Квантовые модули 1
+bobmods.lib.tech.add_recipe_unlock("god-module-1", "intelligent-io") -- Интеллектуальное арифметико-логическое устройство под Квантовые модули 1
+bobmods.lib.tech.remove_recipe_unlock("bi-tech-resin-extraction", "bi-resin-pulp") --прячем лишнюю смолу
+bobmods.lib.tech.remove_recipe_unlock("bi-tech-resin-extraction", "bi-wood-from-pulp") --прячем лишнюю смолу
+data.raw.technology["bi-tech-resin-extraction"].hidden = true --прячем лишнюю смолу
+bobmods.lib.tech.add_prerequisite("hiend_train", "bob-fluid-wagon-3") -- привязать магнитный локомотив и вагоны к вагонам и цистернам мк3
+bobmods.lib.tech.add_prerequisite("water-chemistry-2", "bob-thorium-fuel-reprocessing") -- привязатьо дейтериевую энергетику к Переработки тория (нет ядерного катализатора)
+bobmods.lib.tech.add_prerequisite("extremely-advanced-rocket-payloads", "space-lab") -- Привязать КОсмический челнок к Космическая лаборатория (Данные с космической станции недоступны)
+bobmods.lib.recipe.add_ingredient("offshore-pump", { type = "item", name = "offshore-mk0-pump", amount = 2}) -- к Электрический береговой насос добавляем Твердотопливный береговой насос 2 штуки
+
+--###############################################################################################
+--Финальный Ремонт дерева исследований от ЮШРАКА прости Господи
+bobmods.lib.tech.add_prerequisite("physical-projectile-damage-2", "logistic-science-pack")
+bobmods.lib.tech.add_prerequisite("physical-projectile-damage-3", "military-science-pack")
+bobmods.lib.tech.add_prerequisite("physical-projectile-damage-6", "utility-science-pack")
+bobmods.lib.tech.add_prerequisite("stronger-explosives-4", "utility-science-pack")
+bobmods.lib.tech.add_prerequisite("refined-flammables-4", "utility-science-pack")
+bobmods.lib.tech.add_prerequisite("energy-weapons-damage-4", "chemical-science-pack")
+bobmods.lib.tech.add_prerequisite("energy-weapons-damage-5", "utility-science-pack")
+bobmods.lib.tech.add_prerequisite("laser-shooting-speed-5", "utility-science-pack")
+bobmods.lib.tech.add_prerequisite("follower-robot-count-5", "utility-science-pack")
+bobmods.lib.tech.add_prerequisite("inserter-capacity-bonus-5", "bob-advanced-logistic-science-pack")
+bobmods.lib.tech.add_prerequisite("inserter-capacity-bonus-7", "utility-science-pack")
+bobmods.lib.tech.add_prerequisite("logistic-science-pack", "logistics")
+bobmods.lib.tech.add_prerequisite("steel-processing", "electric-mining")
+bobmods.lib.tech.add_prerequisite("logistics", "electronics")
+bobmods.lib.tech.add_prerequisite("chemical-science-pack", "engine")
+bobmods.lib.tech.add_prerequisite("military-science-pack", "gun-turret")
+bobmods.lib.tech.add_prerequisite("production-science-pack", "electric-engine")
+bobmods.lib.tech.add_prerequisite("utility-science-pack", "nuclear-power")
+bobmods.lib.tech.add_prerequisite("utility-science-pack", "logistics-3")
+bobmods.lib.tech.add_prerequisite("advanced-circuit", "angels-sulfur-processing-2")
+bobmods.lib.tech.add_prerequisite("braking-force-3", "bob-advanced-logistic-science-pack")
+bobmods.lib.tech.add_prerequisite("braking-force-6", "utility-science-pack")
+bobmods.lib.tech.add_prerequisite("logistics-3", "bob-titanium-processing")
+bobmods.lib.tech.add_prerequisite("research-speed-5", "production-science-pack")
+bobmods.lib.tech.add_prerequisite("research-speed-6", "utility-science-pack")
+bobmods.lib.tech.add_prerequisite("electric-energy-distribution-2", "concrete")
+bobmods.lib.tech.add_prerequisite("effect-transmission", "concrete")
+bobmods.lib.tech.add_prerequisite("electric-engine", "engine")
+bobmods.lib.tech.add_prerequisite("worker-robots-speed-3", "bob-advanced-logistic-science-pack")
+bobmods.lib.tech.add_prerequisite("worker-robots-speed-5", "utility-science-pack")
+bobmods.lib.tech.add_prerequisite("worker-robots-storage-2", "bob-advanced-logistic-science-pack")
+bobmods.lib.tech.add_prerequisite("worker-robots-storage-3", "utility-science-pack")
+bobmods.lib.tech.add_prerequisite("energy-shield-equipment", "electric-engine")
+bobmods.lib.tech.add_prerequisite("battery-equipment", "electric-engine")
+bobmods.lib.tech.add_prerequisite("fusion-reactor-equipment", "bob-solar-panel-equipment-4")
+bobmods.lib.tech.add_prerequisite("personal-roboport-equipment", "processing-unit")
+bobmods.lib.tech.add_prerequisite("mining-productivity-3", "production-science-pack")
+bobmods.lib.tech.add_prerequisite("mining-productivity-3", "utility-science-pack")
+bobmods.lib.tech.add_prerequisite("autonomous-space-mining-drones", "bob-drills-4")
+bobmods.lib.tech.add_prerequisite("robot-attrition-explosion-safety", "utility-science-pack")
+bobmods.lib.tech.add_prerequisite("bob-nitinol-processing", "utility-science-pack")
+bobmods.lib.tech.add_prerequisite("bob-electronics-machine-2", "fast-inserter")
+bobmods.lib.tech.add_prerequisite("bob-power-armor-3", "space-science-pack")
+bobmods.lib.tech.add_prerequisite("miniloader", "angels-steel-smelting-1")
+bobmods.lib.tech.add_prerequisite("fast-miniloader", "fast-inserter")
+bobmods.lib.tech.add_prerequisite("express-miniloader", "express-inserters")
+bobmods.lib.tech.add_prerequisite("turbo-miniloader", "bob-turbo-inserter")
+bobmods.lib.tech.add_prerequisite("ultimate-miniloader", "bob-ultimate-inserter")
+bobmods.lib.tech.add_prerequisite("angels-advanced-ore-refining-3", "bob-titanium-processing")
+bobmods.lib.tech.add_prerequisite("angels-advanced-ore-refining-4", "bob-advanced-processing-unit")
+bobmods.lib.tech.add_prerequisite("speed-module-7", "bob-advanced-processing-unit")
+bobmods.lib.tech.add_prerequisite("effectivity-module-7", "bob-advanced-processing-unit")
+bobmods.lib.tech.add_prerequisite("productivity-module-7", "bob-advanced-processing-unit")
+bobmods.lib.tech.add_prerequisite("pollution-clean-module-7", "bob-advanced-processing-unit")
+bobmods.lib.tech.add_prerequisite("pollution-create-module-7", "bob-advanced-processing-unit")
+

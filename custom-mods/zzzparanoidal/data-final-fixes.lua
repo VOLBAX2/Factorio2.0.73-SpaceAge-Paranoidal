@@ -41,6 +41,9 @@ require("final-fixes.recipe-group-tweaks")
 require("final-fixes.battery-trains")
 require("final-fixes.graphics")
 require("final-fixes.fishes")
+require("final-fixes.weapon-tweaks")
+require("final-fixes.bio-mod")
+require("final-fixes.metal-rolls")
 -------------------------------------------------------------------------------------------------
 require("prototypes.entity.entity") --фиксы неправильных имён от SEO
 -------------------------------------------------------------------------------------------------

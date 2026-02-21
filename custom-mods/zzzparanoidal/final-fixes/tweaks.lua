@@ -71,3 +71,14 @@ data.raw["furnace"]["angels-flare-stack"].energy_source.emissions_per_minute = {
 --Маяки больше не действуют на термальные скважины
 data.raw["mining-drill"]["thermal-extractor"].allowed_effects = { "consumption", "pollution" }
 data.raw["mining-drill"]["thermal-bore"].allowed_effects = { "consumption", "pollution" }
+
+--фикс расположения робоспота для транспорта
+data.raw["item"]["vehicle-roboport-3"].subgroup = "vehicle-misc1"
+data.raw["item"]["vehicle-roboport-4"].subgroup = "vehicle-misc1"
+data.raw["item"]["vehicle-roboport-3"].order = "v[vehicle-equipment]-f[roboport-3]"
+data.raw["item"]["vehicle-roboport-4"].order = "v[vehicle-equipment]-f[roboport-4]"
+
+--прячем лишнюю жидкость
+data.raw["fluid"]["angels-liquid-boric-acid"].hidden = true
+data.raw["recipe"]["fill-liquid-boric-acid-barrel"].hidden = true
+data.raw["recipe"]["empty-liquid-boric-acid-barrel"].hidden = true

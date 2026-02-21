@@ -5,8 +5,8 @@ angelsmods.trigger.smelting_products["cobalt"].plate = true
 --новые насосы
 require("prototypes/offshore-pump/item")
 require("prototypes/offshore-pump/recipe")
-require("prototypes/offshore-pump/more-offshore-pumps")
 require("prototypes/offshore-pump/technology")
+require("prototypes/offshore-pump/more-offshore-pumps")
 --
 require("prototypes.artillery-prototype.artillery-turret-prototype") --фикс убирающий био-арту и добовляющий новую на базе обычной
 
