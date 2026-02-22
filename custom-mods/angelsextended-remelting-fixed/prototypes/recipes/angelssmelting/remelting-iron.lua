@@ -1,4 +1,3 @@
-
 data:extend({
 	-- Iron Plate
 	{
@@ -8,7 +7,7 @@ data:extend({
 		subgroup = "angels-iron-casting",
 		enabled = false,
 		energy_required = 6,
-		ingredients = { { type = "item", name = "angels-plate-iron", amount = 4 } },
+		ingredients = { { type = "item", name = "iron-plate", amount = 4 } },
 		results = { { type = "fluid", name = "angels-liquid-molten-iron", amount = 15 } },
 
 		icons = {

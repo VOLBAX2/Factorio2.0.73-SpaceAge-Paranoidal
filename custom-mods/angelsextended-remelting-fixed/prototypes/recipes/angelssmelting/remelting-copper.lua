@@ -8,7 +8,7 @@ data:extend({
 		subgroup = "angels-copper-casting",
 		enabled = false,
 		energy_required = 6,
-		ingredients = { { type = "item", name = "angels-plate-copper", amount = 4 } },
+		ingredients = { { type = "item", name = "copper-plate", amount = 4 } },
 		results = { { type = "fluid", name = "angels-liquid-molten-copper", amount = 15 } },
 
 		icons = {
