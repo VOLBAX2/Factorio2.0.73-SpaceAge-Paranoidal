@@ -1,8 +1,8 @@
 local OV = angelsmods.functions.OV
 
-OV.add_unlock("angels-liquid-molten-solder", "molten-solder-alloy-mixing-1")
-OV.add_unlock("angels-liquid-molten-solder-2", "molten-solder-alloy-mixing-2")
-OV.add_unlock("angels-liquid-molten-solder-3", "molten-solder-alloy-mixing-3")
+OV.add_unlock("angels-solder-smelting-1", "molten-solder-alloy-mixing-1")
+OV.add_unlock("angels-solder-smelting-2", "molten-solder-alloy-mixing-2")
+OV.add_unlock("angels-solder-smelting-3", "molten-solder-alloy-mixing-3")
 
 OV.add_unlock("angels-steel-smelting-1", "molten-steel-alloy-mixing")
 OV.add_unlock("angels-steel-smelting-2", "molten-steel-alloy-mixing-2")
@@ -53,6 +53,5 @@ else
 	aragasmods.functions.OV.disable_technology("remelting-tier-5")
 	aragasmods.functions.OV.disable_technology("remelting-tier-6")
 end
-
 --DYNAMIC OVERRIDES
 --require("prototypes.recipes.remelting-entity-angels")
