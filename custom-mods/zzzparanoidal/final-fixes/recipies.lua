@@ -188,3 +188,6 @@ KaoExtended.recipe.add_to_recipe(
 	"bob-electric-mixing-furnace",
 	{ type = "item", name = "electric-furnace", amount = 1 }
 )
+
+-- Unlock iron-stick by default
+bobmods.lib.recipe.enabled("iron-stick", true)
