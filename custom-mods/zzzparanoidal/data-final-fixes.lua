@@ -77,3 +77,5 @@ require("recipes.flowfix")
 
 -- фикс части косяков с префиксами в рецептах angels-/bob-
 require("__zzzcompability__/fixes/prefixes")
+-- finall aplying of override functions
+angelsmods.functions.OV.execute()
