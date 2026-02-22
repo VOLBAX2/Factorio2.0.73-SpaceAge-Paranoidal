@@ -1,5 +1,5 @@
 bobmods.lib.tech.add_recipe_unlock("steel-processing", "basic-structure-components")
-bobmods.lib.tech.add_recipe_unlock("angels-liquid-molten-invar", "intermediate-structure-components")
+bobmods.lib.tech.add_recipe_unlock("angels-invar-smelting-1", "intermediate-structure-components")
 bobmods.lib.tech.add_recipe_unlock("bob-titanium-processing", "advanced-structure-components")
 bobmods.lib.tech.add_recipe_unlock("bob-tungsten-processing", "anotherworld-structure-components")
 

@@ -77,9 +77,3 @@ require("recipes.flowfix")
 
 -- фикс части косяков с префиксами в рецептах angels-/bob-
 require("__zzzcompability__/fixes/prefixes")
-for tName, tech in pairs(data.raw.technology) do
-	if tName == "bob-electricity" then
-		log(serpent.block(tech))
-	end
-	log(tName)
-end

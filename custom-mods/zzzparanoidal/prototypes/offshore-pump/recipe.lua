@@ -4,7 +4,7 @@ data:extend({
 		name = "offshore-mk0-pump",
 		ingredients = {
 			{ type = "item", name = "iron-gear-wheel", amount = 5 },
-			{ type = "item", name = "pipe", amount = 5 },
+			{ type = "item", name = "bi-wood-pipe", amount = 20 },
 			{ type = "item", name = "stone-brick", amount = 5 },
 		},
 		enabled = true,

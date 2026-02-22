@@ -48,18 +48,6 @@ data.raw.locomotive["bet-locomotive"].selected_minimap_representation.scale = 0.
 	bobmods.lib.recipe.replace_ingredient("bet-fuel-4-empty", "effectivity-module-3", "speed-module-3")
 	bobmods.lib.recipe.add_ingredient("bet-fuel-4-empty", { type = "item", name = "bob-advanced-processing-unit", amount = 3})
 
-	--recycling battery
-	--исправление переработки батарей
-	--в моде на электро-батарейковый поезд какая-то зубодробительная хрень с расчетом поэтому просто ввел количество
-
-	bobmods.lib.recipe.remove_result("bet-fuel-2-recycling", "battery")
-	bobmods.lib.recipe.set_result("bet-fuel-2-recycling", { type = "item", name = "bob-lithium-ion-battery", amount = 405})
-
-	bobmods.lib.recipe.remove_result("bet-fuel-3-recycling", "battery")
-	bobmods.lib.recipe.set_result("bet-fuel-3-recycling", { type = "item", name = "bob-silver-zinc-battery", amount = 675})
-
-	bobmods.lib.recipe.remove_result("bet-fuel-4-recycling", "battery")
-	bobmods.lib.recipe.set_result("bet-fuel-4-recycling", { type = "item", name = "bob-silver-zinc-battery", amount = 816})
 	-------------------------------------------------------------------------------------------------
 	--зарядные
 	data.raw.furnace["bet-charger-1"].icon = "__zzzparanoidal__/graphics/train/electric/factory_var_1_icon.png"

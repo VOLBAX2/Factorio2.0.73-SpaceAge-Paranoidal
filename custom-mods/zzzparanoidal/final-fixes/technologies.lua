@@ -579,3 +579,11 @@ bobmods.lib.tech.add_prerequisite("bob-pollution-create-module-5", "bob-advanced
 
 -- Hide starting bob-burner-lab tech
 bobmods.lib.tech.hide("bob-burner-lab")
+bobmods.lib.tech.remove_prerequisite("automation-science-pack", "bob-burner-lab")
+-- fix research trigger from bob-burner-lab -> burner-lab
+data.raw.technology["automation-science-pack"].research_trigger.item = "burner-lab"
+
+-- add electric-motor recipe unlock to electricity tech
+bobmods.lib.tech.add_recipe_unlock("electricity", "electric-motor")
+bobmods.lib.tech.add_recipe_unlock("electricity", "pipe")
+bobmods.lib.tech.add_recipe_unlock("electricity", "pipe-to-ground")
