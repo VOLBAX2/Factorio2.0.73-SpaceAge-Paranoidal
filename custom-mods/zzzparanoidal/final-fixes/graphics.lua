@@ -85,11 +85,11 @@ data.raw.technology["Space-Lab-Research-61"].icons =
 	{ { icon = "__base__/graphics/technology/research-speed.png", icon_size = 256, icon_mipmaps = 4 } } --AKMF
 
 data.raw.technology["stack-inserter-research-1"].icons =
-	{ { icon = "__base__/graphics/technology/stack-inserter.png", icon_size = 256, icon_mipmaps = 4 } } --AKMF
+	{ { icon = "__base__/graphics/technology/bulk-inserter.png", icon_size = 256, icon_mipmaps = 4 } } --AKMF
 data.raw.technology["stack-inserter-research-5"].icons =
-	{ { icon = "__base__/graphics/technology/stack-inserter.png", icon_size = 256, icon_mipmaps = 4 } } --AKMF
+	{ { icon = "__base__/graphics/technology/bulk-inserter.png", icon_size = 256, icon_mipmaps = 4 } } --AKMF
 data.raw.technology["stack-inserter-research-10"].icons =
-	{ { icon = "__base__/graphics/technology/stack-inserter.png", icon_size = 256, icon_mipmaps = 4 } } --AKMF
+	{ { icon = "__base__/graphics/technology/bulk-inserter.png", icon_size = 256, icon_mipmaps = 4 } } --AKMF
 data.raw.technology["stack-inserter-research-15"].icons =
-	{ { icon = "__base__/graphics/technology/stack-inserter.png", icon_size = 256, icon_mipmaps = 4 } } --AKMF
+	{ { icon = "__base__/graphics/technology/bulk-inserter.png", icon_size = 256, icon_mipmaps = 4 } } --AKMF
 

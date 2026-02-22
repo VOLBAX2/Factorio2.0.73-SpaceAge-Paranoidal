@@ -208,12 +208,12 @@ data:extend({
 		icons = {
 			{
 				icon = "__bobplates__/graphics/icons/plate/nickel-plate.png",
-				icon_size = 128,
+				icon_size = 32,
 				icon_mipmaps = 4,
 			},
 			{
 				icon = "__bobores__/graphics/icons/nickel-ore.png",
-				icon_size = 64,
+				icon_size = 32,
 				icon_mipmaps = 4,
 				scale = 0.2,
 				shift = { -12, -12 },
@@ -241,12 +241,12 @@ data:extend({
 		icons = {
 			{
 				icon = "__bobplates__/graphics/icons/plate/zinc-plate.png",
-				icon_size = 128,
+				icon_size = 32,
 				icon_mipmaps = 4,
 			},
 			{
 				icon = "__bobores__/graphics/icons/zinc-ore.png",
-				icon_size = 64,
+				icon_size = 32,
 				icon_mipmaps = 4,
 				scale = 0.2,
 				shift = { -12, -12 },
@@ -274,7 +274,7 @@ data:extend({
 		icons = {
 			{
 				icon = "__bobplates__/graphics/icons/plate/cobalt-plate.png",
-				icon_size = 64,
+				icon_size = 32,
 				icon_mipmaps = 4,
 			},
 			{
@@ -311,12 +311,12 @@ data:extend({
 		icons = {
 			{
 				icon = "__bobplates__/graphics/icons/plate/titanium-plate.png",
-				icon_size = 128,
+				icon_size = 32,
 				icon_mipmaps = 4,
 			},
 			{
 				icon = "__bobores__/graphics/icons/rutile-ore.png",
-				icon_size = 64,
+				icon_size = 32,
 				icon_mipmaps = 4,
 				scale = 0.2,
 				shift = { -12, -12 },
@@ -343,17 +343,17 @@ data:extend({
 	},
 })
 
-bobmods.lib.tech.add_recipe_unlock("angels-liquid-molten-bronze", "bronze-alloy-x")
-bobmods.lib.tech.add_recipe_unlock("angels-liquid-molten-brass", "bob-brass-alloy-x")
+bobmods.lib.tech.add_recipe_unlock("angels-bronze-smelting-1", "bronze-alloy-x")
+bobmods.lib.tech.add_recipe_unlock("angels-brass-smelting-1", "bob-brass-alloy-x")
 bobmods.lib.tech.add_recipe_unlock("angels-tungsten-smelting-1", "copper-tungsten-alloy-x")
 bobmods.lib.tech.add_recipe_unlock("bob-tungsten-alloy-processing", "bob-tungsten-carbide-x")
 bobmods.lib.tech.add_recipe_unlock("bob-tungsten-alloy-processing", "bob-tungsten-carbide-2x")
-bobmods.lib.tech.add_recipe_unlock("angels-liquid-molten-gunmetal", "gunmetal-alloy-x")
-bobmods.lib.tech.add_recipe_unlock("angels-liquid-molten-invar", "bob-invar-alloy-x")
-bobmods.lib.tech.add_recipe_unlock("angels-liquid-molten-nitinol", "nitinol-alloy-x")
-bobmods.lib.tech.add_recipe_unlock("angels-liquid-molten-cobalt-steel", "bob-cobalt-steel-alloy-x")
+bobmods.lib.tech.add_recipe_unlock("angels-gunmetal-smelting-1", "gunmetal-alloy-x")
+bobmods.lib.tech.add_recipe_unlock("angels-invar-smelting-1", "bob-invar-alloy-x")
+bobmods.lib.tech.add_recipe_unlock("angels-nitinol-smelting-1", "nitinol-alloy-x")
+bobmods.lib.tech.add_recipe_unlock("angels-cobalt-steel-smelting-1", "bob-cobalt-steel-alloy-x")
 bobmods.lib.tech.add_recipe_unlock("angels-nickel-smelting-1", "bob-nickel-electrolysis-x")
 bobmods.lib.tech.add_recipe_unlock("angels-zinc-smelting-1", "bob-zinc-electrolysis-x")
 bobmods.lib.tech.add_recipe_unlock("angels-cobalt-smelting-1", "cobalat-electrolysis-x")
 bobmods.lib.tech.add_recipe_unlock("angels-titanium-smelting-1", "bob-titanium-electrolysis-x")
-bobmods.lib.tech.add_recipe_unlock("angels-liquid-molten-solder", "angel-solder-alloy-x")
+bobmods.lib.tech.add_recipe_unlock("angels-solder-smelting-1", "angel-solder-alloy-x")

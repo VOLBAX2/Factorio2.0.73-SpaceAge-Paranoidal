@@ -100,9 +100,9 @@ data:extend({
 		energy_required = 5,
 		enabled = false,
 		ingredients = {
-			{ "iron-plate", 45 },
-			{ "copper-plate", 5 },
-			{ "coal", 75 },
+			{ type = "item", name = "iron-plate", amount = 45 },
+			{ type = "item", name = "copper-plate", amount = 5 },
+			{ type = "item", name = "coal", amount = 75 },
 		},
 		results = { { type = "item", name = "fe-c-accumulator", amount = 1 } },
 	},

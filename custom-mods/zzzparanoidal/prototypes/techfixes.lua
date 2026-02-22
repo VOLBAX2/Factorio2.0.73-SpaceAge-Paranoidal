@@ -37,4 +37,4 @@ bobmods.lib.tech.remove_recipe_unlock("bob-oil-boiler-4", "bob-oil-boiler-4-from
 data.raw.technology["bob-robot-plasma-drones"].hidden = true
 
 --разблокируем рецепт для упрощенной плавки бронзы в печах
---bobmods.lib.tech.add_recipe_unlock("angels-liquid-molten-bronze", "bob-bronze-alloy")
+bobmods.lib.tech.add_recipe_unlock("angels-bronze-smelting-1", "bob-bronze-alloy")
