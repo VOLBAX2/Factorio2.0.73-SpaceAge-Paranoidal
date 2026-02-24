@@ -585,5 +585,33 @@ data.raw.technology["automation-science-pack"].research_trigger.item = "burner-l
 
 -- add electric-motor recipe unlock to electricity tech
 bobmods.lib.tech.add_recipe_unlock("electricity", "electric-motor")
-bobmods.lib.tech.add_recipe_unlock("electricity", "pipe")
-bobmods.lib.tech.add_recipe_unlock("electricity", "pipe-to-ground")
+bobmods.lib.tech.remove_recipe_unlock("electricity", "bob-copper-pipe")
+bobmods.lib.tech.remove_recipe_unlock("electricity", "bob-copper-pipe-to-ground")
+
+bobmods.lib.tech.add_recipe_unlock("basic-fluid-handling", "pipe")
+bobmods.lib.tech.add_recipe_unlock("basic-fluid-handling", "pipe-to-ground")
+bobmods.lib.tech.add_recipe_unlock("basic-fluid-handling", "bob-copper-pipe")
+bobmods.lib.tech.add_recipe_unlock("basic-fluid-handling", "bob-copper-pipe-to-ground")
+bobmods.lib.tech.add_recipe_unlock("basic-fluid-handling", "bob-small-storage-tank")
+bobmods.lib.tech.add_recipe_unlock("basic-fluid-handling", "bob-small-inline-storage-tank")
+bobmods.lib.tech.add_recipe_unlock("basic-fluid-handling", "pipe-straight")
+bobmods.lib.tech.add_recipe_unlock("basic-fluid-handling", "pipe-junction")
+bobmods.lib.tech.add_recipe_unlock("basic-fluid-handling", "pipe-elbow")
+
+bobmods.lib.tech.remove_recipe_unlock("angels-fluid-control", "bob-small-storage-tank")
+bobmods.lib.tech.remove_recipe_unlock("angels-fluid-control", "bob-small-inline-storage-tank")
+
+bobmods.lib.tech.remove_recipe_unlock("steam-power", "pipe")
+bobmods.lib.tech.remove_recipe_unlock("steam-power", "pipe-to-ground")
+bobmods.lib.tech.remove_recipe_unlock("steam-power", "pipe-straight")
+bobmods.lib.tech.remove_recipe_unlock("steam-power", "pipe-junction")
+bobmods.lib.tech.remove_recipe_unlock("steam-power", "pipe-elbow")
+bobmods.lib.tech.remove_recipe_unlock("steam-power", "offshore-pump")
+bobmods.lib.tech.add_recipe_unlock("steam-power", "steam-engine")
+
+bobmods.lib.tech.remove_science_pack("steam-power", "logistic-science-pack")
+bobmods.lib.tech.remove_prerequisite("steam-power", "logistic-science-pack")
+
+bobmods.lib.tech.remove_prerequisite("bob-steam-engine-2", "bob-steam-engine-1")
+bobmods.lib.tech.add_prerequisite("bob-steam-engine-2", "steam-power")
+bobmods.lib.tech.hide("bob-steam-engine-1")

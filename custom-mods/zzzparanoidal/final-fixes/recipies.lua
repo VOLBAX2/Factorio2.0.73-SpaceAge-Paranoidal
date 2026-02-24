@@ -159,10 +159,11 @@ bobmods.lib.recipe.set_ingredients("bob-boiler-5", {
 	{ type = "item", name = "bob-copper-tungsten-alloy", amount = 20 },
 })
 
+--Фикс рецепта манипулятора
 bobmods.lib.recipe.set_ingredients("inserter", {
 	{ type = "item", name = "electric-motor", amount = 2 },
-	{ type = "item", name = "burner-filter-inserter", amount = 1 },
-	{ type = "item", name = "electronic-circuit", amount = 4 },
+	{ type = "item", name = "burner-inserter", amount = 1 },
+	{ type = "item", name = "bob-basic-circuit-board", amount = 4 },
 }) --в рецепт к фильтрующему добавляем фитльтрующий твердотопливный
 --13.08 починка рецепта кристаллического раствора
 bobmods.lib.recipe.set_ingredients("angels-crystal-powder-slurry", {
@@ -191,3 +192,10 @@ KaoExtended.recipe.add_to_recipe(
 
 -- Unlock iron-stick by default
 bobmods.lib.recipe.enabled("iron-stick", true)
+
+--Фикс рецепта базовой микросхемы
+bobmods.lib.recipe.set_ingredients("bob-basic-circuit-board", {
+	{ type = "item", name = "condensator", amount = 2 },
+    { type = "item", name = "bob-wooden-board", amount = 1 },
+    { type = "item", name = "copper-cable", amount = 3 },
+})
