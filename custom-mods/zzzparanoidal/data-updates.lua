@@ -5,6 +5,7 @@ require("tweaks.entity.generators")
 require("tweaks.entity.fluid-void")
 require("tweaks.entity.gas-void")
 require("tweaks.entity.wires")
+require("tweaks.entity.nuke-cliffs")
 
 require("tweaks.item.personal-roboport")
 

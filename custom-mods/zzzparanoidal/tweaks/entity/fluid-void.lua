@@ -1,6 +1,7 @@
 -- добавление жидкостям возможность быть отправленными на слив через отстойник
 -- пример из mods\angelsrefining...\prototypes\refining-generate.lua
 
+angelsmods.functions.make_void("angels-liquid-coolant-used", "water")
 angelsmods.functions.make_void("liquid-phosphoric-acid", "water")
 angelsmods.functions.make_void("liquid-mercury", "water")
 angelsmods.functions.make_void("angels-liquid-pulping-liquor", "water")
@@ -62,3 +63,4 @@ angelsmods.functions.make_void("angels-liquid-water-semiheavy-3", "water")
 angelsmods.functions.make_void("angels-liquid-water-heavy", "water")
 angelsmods.functions.make_void("liquid-tetraethyllead", "water")
 angelsmods.functions.make_void("bob-sulfuric-nitric-acid", "water")
+

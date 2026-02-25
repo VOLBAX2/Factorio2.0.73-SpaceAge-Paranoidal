@@ -1,4 +1,12 @@
 require("__zzzparanoidal__.paralib")
+-- from Kao Extended
+data.raw["land-mine"]["land-mine"].flags = {
+	"placeable-player",
+	"placeable-enemy",
+	"player-creation",
+	"not-on-map",
+}
+-- end from KaoExtended
 for _, tweak in pairs({
 	{
 		name = "bob-plasma-turret-1",

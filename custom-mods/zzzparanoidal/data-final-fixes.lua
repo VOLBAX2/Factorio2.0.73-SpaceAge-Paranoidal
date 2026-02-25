@@ -1,6 +1,11 @@
 require("prototypes.recipe.warehouses")
 require("prototypes.recipe.chemistry")
 
+require("tweaks.entity.roboport")
+require("tweaks.entity.add-liquid-to-mine-ores")
+require("tweaks.entity.construction-robots")
+require("tweaks.entity.alien-loot")
+require("tweaks.entity.increase-stack-size")
 require("tweaks.entity.warfare")
 require("tweaks.entity.pipes")
 require("tweaks.entity.beacons") -- по маякам можно ходить
@@ -15,10 +20,12 @@ require("tweaks.entity.bio-mod")
 require("tweaks.item.roboport")
 require("tweaks.item.fuel")
 
+require("tweaks.recipe.insert-mining-drill-bit")
+require("tweaks.recipe.insert-structured-components")
 require("tweaks.recipe.metallurgy")
 require("tweaks.recipe.pumps")
 require("tweaks.recipe.gems")
-require("tweaks.recipe.module-contact")
+require("tweaks.recipe.module")
 require("tweaks.recipe.poles") -- Изменение рецептов ЛЭП
 require("tweaks.recipe.yuoki")
 require("tweaks.recipe.concrete")

@@ -7,6 +7,9 @@ require("prototypes.entity.concrete-brick")
 require("prototypes.entity.artillery-prototype")
 
 -- new items
+require("prototypes.item.mining-drill-bit")
+require("prototypes.item.structured-components")
+require("prototypes.item.electronics")
 require("prototypes.item.bio-content")
 require("prototypes.item.offshore-pumps")
 require("prototypes.item.battery-electric-train")
@@ -15,6 +18,11 @@ require("prototypes.item.artillery-prototype")
 require("prototypes.item.concrete-brick")
 
 -- new recipies
+require("prototypes.recipe.manganese-chrome-platinum-sorting")
+require("prototypes.recipe.mining-drill-bit")
+require("prototypes.recipe.electronics")
+require("prototypes.recipe.structured-components")
+require("prototypes.recipe.science-packs")
 require("prototypes.recipe.bio-content")
 require("prototypes.recipe.offshore-pumps")
 require("prototypes.recipe.battery-electric-train")
@@ -24,6 +32,7 @@ require("prototypes.recipe.glass")
 require("prototypes.recipe.concrete-brick")
 require("prototypes.recipe.stone")
 require("prototypes.recipe.ammo-pistol")
+require("prototypes.recipe.metallurgy")
 
 -- new technologies
 require("prototypes.technology.offshore-pumps")
@@ -47,6 +56,7 @@ require("tweaks.entity.boilers")
 require("tweaks.entity.alert-arrow")
 
 require("tweaks.recipe.fuel")
+require("tweaks.recipe.science-packs")
 
 require("tweaks.custom.angelsmods")
 require("tweaks.custom.uniform-recipies")

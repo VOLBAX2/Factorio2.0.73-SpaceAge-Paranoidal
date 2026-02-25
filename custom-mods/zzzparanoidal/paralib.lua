@@ -28,6 +28,21 @@ paralib.bobmods.lib = paralib.bobmods.lib or {}
 paralib.bobmods.lib.tech = paralib.bobmods.lib.tech or {}
 paralib.bobmods.lib.recipe = paralib.bobmods.lib.recipe or {}
 
+---Check that value have proper type
+---@param value string
+---@param expectedType string
+function paralib.EnsureType(value, expectedType)
+	if type(value) ~= expectedType then
+		paralib.ProcessError(
+			serpent.block(value, { maxlevel = 1 })
+				.. " expected to have type: "
+				.. expectedType
+				.. " but it is:"
+				.. type(value)
+		)
+	end
+end
+
 ---Check that data.raw[section][name] exists
 ---@param section string
 ---@param name string
@@ -252,14 +267,14 @@ end
 
 function paralib.bobmods.lib.recipe.remove_ingredient(recipe, ingredient)
 	paralib.EnsureExists("recipe", recipe)
-	paralib.EnsureIngredientExists(ingredient)
+	paralib.EnsureType(ingredient, "string")
 	bobmods.lib.recipe.remove_ingredient(recipe, ingredient)
 end
 
 function paralib.bobmods.lib.recipe.replace_ingredient(recipe, ingredientOld, ingredientNew)
 	paralib.EnsureExists("recipe", recipe)
 	paralib.EnsureIngredientExists(ingredientOld)
-	paralib.EnsureIngredientExists(ingredientNew)
+	paralib.EnsureType(ingredientNew, "string")
 	bobmods.lib.recipe.replace_ingredient(recipe, ingredientOld, ingredientNew)
 end
 

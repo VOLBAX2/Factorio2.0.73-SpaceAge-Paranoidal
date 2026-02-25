@@ -1,5 +1,14 @@
 require("__zzzparanoidal__.paralib")
 
+-- from KaoExtended
+paralib.bobmods.lib.recipe.remove_ingredient("bob-brass-alloy", "copper-plate")
+paralib.bobmods.lib.recipe.remove_ingredient("bob-brass-alloy", "bob-zinc-plate")
+paralib.bobmods.lib.recipe.add_ingredient("bob-brass-alloy", { type = "item", name = "bob-bronze-alloy", amount = 2 })
+paralib.bobmods.lib.recipe.add_ingredient("bob-brass-alloy", { type = "item", name = "bob-zinc-plate", amount = 8 })
+
+paralib.bobmods.lib.recipe.remove_ingredient("bob-invar-alloy", "iron-plate")
+paralib.bobmods.lib.recipe.add_ingredient("bob-invar-alloy", { type = "item", name = "bob-lead-plate", amount = 3 })
+
 paralib.bobmods.lib.recipe.hide("bob-zinc-plate")
 paralib.bobmods.lib.recipe.hide("bob-nickel-plate")
 
@@ -69,3 +78,4 @@ paralib.bobmods.lib.recipe.set_result("angels-ore6-crushed-processing", { name =
 paralib.bobmods.lib.recipe.set_energy_required("angels-stone-crushed", 2)
 paralib.bobmods.lib.recipe.set_ingredient("angels-stone-crushed", { type = "item", name = "angels-slag", amount = 5})
 paralib.bobmods.lib.recipe.set_result("angels-stone-crushed", { type = "item", name = "angels-stone-crushed", amount = 10})
+
