@@ -1,3 +1,4 @@
+require("__zzzparanoidal__.paralib")
 local order = 65
 local function createSC(name)
 	data:extend({
@@ -82,13 +83,13 @@ else
 	}
 end
 
-bobmods.lib.recipe.remove_ingredient("bob-brass-alloy", "copper-plate")
-bobmods.lib.recipe.remove_ingredient("bob-brass-alloy", "bob-zinc-plate")
+paralib.bobmods.lib.recipe.remove_ingredient("bob-brass-alloy", "copper-plate")
+paralib.bobmods.lib.recipe.remove_ingredient("bob-brass-alloy", "bob-zinc-plate")
 table.insert(
 	data.raw["recipe"]["bob-brass-alloy"].ingredients,
 	{ type = "item", name = "bob-bronze-alloy", amount = 2 }
 )
 table.insert(data.raw["recipe"]["bob-brass-alloy"].ingredients, { type = "item", name = "bob-zinc-plate", amount = 8 })
 
-bobmods.lib.recipe.remove_ingredient("bob-invar-alloy", "iron-plate")
+paralib.bobmods.lib.recipe.remove_ingredient("bob-invar-alloy", "iron-plate")
 table.insert(data.raw["recipe"]["bob-invar-alloy"].ingredients, { type = "item", name = "bob-lead-plate", amount = 3 })

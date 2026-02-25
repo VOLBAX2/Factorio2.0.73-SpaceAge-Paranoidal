@@ -46,11 +46,8 @@ if [[ "$FACTORIO" == "" ]]; then
 fi
 
 if [[ "$syncAll" == "true" ]]; then
-	echo "Coping old $gameDir/mods/mod-list.json"
 	echo "Removing all mods from $gameDir/mods/ and copy mods and custom-mods to $gameDir/mods/"
 	read -p "Continue? (Ctrl-C to cancel)"
-	cp "$gameDir/mods/mod-list.json" "$SCRIPT_DIR/mods/"
-	echo "$gameDir/mods/mod-list.json copied"
 	rm "$gameDir/mods/"* -rf
 	echo "Old mods deleted. Start copy $SCRIPT_DIR/mods/ ..."
 	rsync -r "$SCRIPT_DIR/mods/" "$gameDir/mods/"

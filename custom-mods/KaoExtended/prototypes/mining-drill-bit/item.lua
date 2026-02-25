@@ -1,3 +1,4 @@
+require("__zzzparanoidal__.paralib")
 local order = 15
 local function createBIT(name)
 	data:extend({
@@ -53,29 +54,29 @@ newRecipe("mk1", 5).ingredients = {
 	{ type = "item", name = "mining-drill-bit-mk0", amount = 2},
 	{ type = "item", name = "iron-plate", amount = 15},
 }
-bobmods.lib.tech.add_recipe_unlock("electric-mining-drill", "mining-drill-bit-mk1")
+paralib.bobmods.lib.tech.add_recipe_unlock("electric-mining-drill", "mining-drill-bit-mk1")
 
 newRecipe("mk2", 7).ingredients = {
 	{ type = "item", name = "mining-drill-bit-mk1", amount = 2},
 	{ type = "item", name = "steel-plate", amount = 15},
 }
-bobmods.lib.tech.add_recipe_unlock("steel-processing", "mining-drill-bit-mk2")
+paralib.bobmods.lib.tech.add_recipe_unlock("steel-processing", "mining-drill-bit-mk2")
 
 newRecipe("mk3", 12).ingredients = {
 	{ type = "item", name = "mining-drill-bit-mk2", amount = 2},
 	{ type = "item", name = "bob-cobalt-steel-alloy", amount = 20},
 }
-bobmods.lib.tech.add_recipe_unlock("bob-drills-2", "mining-drill-bit-mk3")
+paralib.bobmods.lib.tech.add_recipe_unlock("bob-drills-2", "mining-drill-bit-mk3")
 
 newRecipe("mk4", 15).ingredients = {
 	{ type = "item", name = "mining-drill-bit-mk3", amount = 2},
 	{ type = "item", name = "bob-titanium-plate", amount = 20},
 }
-bobmods.lib.tech.add_recipe_unlock("bob-drills-3", "mining-drill-bit-mk4")
+paralib.bobmods.lib.tech.add_recipe_unlock("bob-drills-3", "mining-drill-bit-mk4")
 
 newRecipe("mk5", 15).ingredients = {
 	{ type = "item", name = "mining-drill-bit-mk4", amount = 2},
 	{ type = "item", name = "bob-nitinol-gear-wheel", amount = 4},
 	{ type = "item", name = "bob-tungsten-carbide", amount = 20},
 }
-bobmods.lib.tech.add_recipe_unlock("bob-drills-4", "mining-drill-bit-mk5")
+paralib.bobmods.lib.tech.add_recipe_unlock("bob-drills-4", "mining-drill-bit-mk5")

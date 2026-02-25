@@ -7,9 +7,10 @@ data:extend({
     icon_size = 32,
     subgroup = "angels-ore-sorting-advanced",
     order = "p-a",
-    category = "angels-ore-sorting",
+    category = "angels-ore-sorting-3",
     enabled = false,
     allow_decomposition = false,
+		allow_productivity = true,
     always_show_products = true,
     ingredients =
         {
@@ -19,7 +20,7 @@ data:extend({
             {type="item", name="angels-catalysator-orange", amount=1},
         },
     energy_required = 1.5,
-    results = {{type="item", name="angels-platinum-ore", amount=1}},
+    results = {{type="item", name="angels-platinum-ore", amount=2}},
 },
 -------------------------------------------------------------------------------------------------
 {
@@ -54,13 +55,14 @@ data:extend({
     icon_size = 32,
     subgroup = "angels-ore-sorting-advanced",
     order = "e-a",
-    category = "angels-ore-sorting",
+    category = "angels-ore-sorting-2",
     enabled = false,
     allow_decomposition = false,
+    allow_productivity = true,
     always_show_products=true,
     ingredients =
         {
-            {type="item", name="angels-ore8-crushed", amount=2},
+            {type="item", name="angels-ore8-crushed", amount=4},
             {type="item", name="angels-ore5-crushed", amount=2},
             {type="item", name="angels-catalysator-brown", amount=1},
         },
@@ -99,9 +101,10 @@ data:extend({
     icon_size = 32,
     subgroup = "angels-ore-sorting-advanced",
     order = "o-a",
-    category = "angels-ore-sorting",
+    category = "angels-ore-sorting-3",
     enabled = false,
     allow_decomposition = false,
+    allow_productivity = true,
     always_show_products=true,
     ingredients =
         {
@@ -111,7 +114,7 @@ data:extend({
             {type="item", name="angels-catalysator-orange", amount=1},
     },
     energy_required = 1.5,
-    results = {{type="item", name="angels-chrome-ore", amount=1}},
+    results = {{type="item", name="angels-chrome-ore", amount=3}},
 },
 -------------------------------------------------------------------------------------------------
 {
