@@ -801,3 +801,5 @@ paralib.bobmods.lib.recipe.set_ingredients("bob-basic-circuit-board", {
 	{ type = "item", name = "bob-wooden-board", amount = 1 },
 	{ type = "item", name = "copper-cable", amount = 3 },
 })
+
+paralib.bobmods.lib.recipe.replace_ingredient("bi-bio-farm", "stone-crushed", "stone-brick");
