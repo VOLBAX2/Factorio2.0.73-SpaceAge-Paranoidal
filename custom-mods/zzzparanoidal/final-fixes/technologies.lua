@@ -7,11 +7,8 @@ paralib.bobmods.lib.tech.add_recipe_unlock("bob-tungsten-processing", "anotherwo
 
 paralib.bobmods.lib.tech.add_recipe_unlock("angels-iron-smelting-1", "angels-iron-gear-wheel-stack-casting")
 paralib.bobmods.lib.tech.add_recipe_unlock("angels-iron-smelting-2", "angels-iron-gear-wheel-stack-casting-fast")
-paralib.bobmods.lib.tech.add_recipe_unlock("angels-steel-smelting-1", "angels-steel-gear-wheel-stack-casting")
-paralib.bobmods.lib.tech.add_recipe_unlock("angels-steel-smelting-2", "angels-steel-gear-wheel-stack-casting-fast")
 
 paralib.bobmods.lib.tech.add_recipe_unlock("angels-iron-smelting-1", "angels-iron-gear-wheel-stack-converting")
-paralib.bobmods.lib.tech.add_recipe_unlock("angels-steel-smelting-1", "angels-steel-gear-wheel-stack-converting")
 
 paralib.bobmods.lib.tech.add_recipe_unlock("angels-sulfur-processing-1", "condensator2")
 paralib.bobmods.lib.tech.add_recipe_unlock("angels-aluminium-smelting-1", "condensator3")
