@@ -430,7 +430,7 @@ data:extend({
 			{ type = "fluid", name = "angels-liquid-coolant", amount = 40, maximum_temperature = 50 },
 		},
 		results = {
-			{ type = "item", name = "angels-steel-gear-wheel-stack", amount = 4 },
+			{ type = "item", name = "angels-steel-gear-wheel-stack", amount = 3 },
 			{ type = "fluid", name = "angels-liquid-coolant-used", amount = 40, temperature = 300 },
 		},
 		main_product = "angels-steel-gear-wheel-stack",
@@ -493,7 +493,7 @@ data:extend({
 			{ type = "item", name = "angels-steel-gear-wheel-stack", amount = 1 },
 		},
 		results = {
-			{ type = "item", name = "bob-steel-gear-wheel", amount = 5 },
+			{ type = "item", name = "bob-steel-gear-wheel", amount = 4 },
 		},
 		icons = {
 			{
@@ -509,5 +509,63 @@ data:extend({
 		},
 		icon_size = 64,
 		order = "kc",
+	},
+	{
+		type = "recipe",
+		name = "angels-steel-gear-wheel-stack-converting-2",
+		category = "advanced-crafting",
+		subgroup = "angels-steel-casting",
+		energy_required = 0.5,
+		enabled = false,
+		allow_decomposition = false,
+		ingredients = {
+			{ type = "item", name = "angels-steel-gear-wheel-stack", amount = 1 },
+		},
+		results = {
+			{ type = "item", name = "bob-steel-gear-wheel", amount = 6 },
+		},
+		icons = {
+			{
+				icon = "__bobplates__/graphics/icons/steel-gear-wheel.png",
+				icon_size = 32,
+			},
+			{
+				icon = "__zzzparanoidal__/graphics/smelting/steel-gear-wheel-stack.png",
+				icon_size = 64,
+				scale = 0.2,
+				shift = { -12, -12 },
+			},
+		},
+		icon_size = 64,
+		order = "kd",
+	},
+	{
+		type = "recipe",
+		name = "angels-steel-gear-wheel-stack-converting-3",
+		category = "advanced-crafting",
+		subgroup = "angels-steel-casting",
+		energy_required = 0.5,
+		enabled = false,
+		allow_decomposition = false,
+		ingredients = {
+			{ type = "item", name = "angels-steel-gear-wheel-stack", amount = 1 },
+		},
+		results = {
+			{ type = "item", name = "bob-steel-gear-wheel", amount = 8 },
+		},
+		icons = {
+			{
+				icon = "__bobplates__/graphics/icons/steel-gear-wheel.png",
+				icon_size = 32,
+			},
+			{
+				icon = "__zzzparanoidal__/graphics/smelting/steel-gear-wheel-stack.png",
+				icon_size = 64,
+				scale = 0.2,
+				shift = { -12, -12 },
+			},
+		},
+		icon_size = 64,
+		order = "ke",
 	},
 })
