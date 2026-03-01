@@ -5,17 +5,20 @@ local function FixBiSand()
 	Assert(data.raw ~= nil and data.raw.recipe ~= nil, "Expected data.raw.recipe but it is nil")
 
 	local recipe = data.raw.recipe["bi-sand"]
-	Assert.AssertOutdated(type(recipe) == "table", "Recipe bi-sand not found.")
-	Assert.AssertOutdated(type(recipe.result) == "string", "Recipe bi-sand not contain result as string section.")
+	if type(recipe) ~= "table" then return end
 
 	local amount = 5
 	local newName = "angels-solid-sand"
-	if recipe.results and type(recipe.results.amount) == "number" then
-		amount = recipe.results.amount
+	
+	if recipe.results and type(recipe.results) == "table" and recipe.results[1] then
+		amount = recipe.results[1].amount or amount
+	elseif recipe.result_count then
+		amount = recipe.result_count
 	end
 
 	recipe.results = { { type = "item", name = newName, amount = amount } }
 	recipe.result = nil -- clear old definition
+	recipe.result_count = nil
 end
 
 -- fluid.bi-biomass.icons[1].scale = nil
