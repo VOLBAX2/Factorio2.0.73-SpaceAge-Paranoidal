@@ -369,7 +369,7 @@ data:extend({
 			{ type = "fluid", name = "angels-liquid-coolant", amount = 40, maximum_temperature = 50 },
 		},
 		results = {
-			{ type = "item", name = "angels-iron-gear-wheel-stack", amount = 4 },
+			{ type = "item", name = "angels-iron-gear-wheel-stack", amount = 3 },
 			{ type = "fluid", name = "angels-liquid-coolant-used", amount = 40, temperature = 300 },
 		},
 		main_product = "angels-iron-gear-wheel-stack",
@@ -464,7 +464,7 @@ data:extend({
 			{ type = "item", name = "angels-iron-gear-wheel-stack", amount = 1 },
 		},
 		results = {
-			{ type = "item", name = "iron-gear-wheel", amount = 5 },
+			{ type = "item", name = "iron-gear-wheel", amount = 4 },
 		},
 		icons = {
 			{
@@ -509,6 +509,64 @@ data:extend({
 		},
 		icon_size = 64,
 		order = "kc",
+	},
+	{
+		type = "recipe",
+		name = "angels-iron-gear-wheel-stack-converting-2",
+		category = "advanced-crafting",
+		subgroup = "angels-iron-casting",
+		energy_required = 0.5,
+		allow_decomposition = false,
+		enabled = false,
+		ingredients = {
+			{ type = "item", name = "angels-iron-gear-wheel-stack", amount = 1 },
+		},
+		results = {
+			{ type = "item", name = "iron-gear-wheel", amount = 6 },
+		},
+		icons = {
+			{
+				icon = data.raw.item["iron-gear-wheel"].icon,
+				icon_size = data.raw.item["iron-gear-wheel"].iconsize,
+			},
+			{
+				icon = "__zzzparanoidal__/graphics/smelting/iron-gear-wheel-stack.png",
+				icon_size = 64,
+				scale = 0.2,
+				shift = { -12, -12 },
+			},
+		},
+		icon_size = 64,
+		order = "kd",
+	},
+	{
+		type = "recipe",
+		name = "angels-iron-gear-wheel-stack-converting-3",
+		category = "advanced-crafting",
+		subgroup = "angels-iron-casting",
+		energy_required = 0.5,
+		allow_decomposition = false,
+		enabled = false,
+		ingredients = {
+			{ type = "item", name = "angels-iron-gear-wheel-stack", amount = 1 },
+		},
+		results = {
+			{ type = "item", name = "iron-gear-wheel", amount = 8 },
+		},
+		icons = {
+			{
+				icon = data.raw.item["iron-gear-wheel"].icon,
+				icon_size = data.raw.item["iron-gear-wheel"].iconsize,
+			},
+			{
+				icon = "__zzzparanoidal__/graphics/smelting/iron-gear-wheel-stack.png",
+				icon_size = 64,
+				scale = 0.2,
+				shift = { -12, -12 },
+			},
+		},
+		icon_size = 64,
+		order = "ke",
 	},
 	{
 		type = "recipe",
