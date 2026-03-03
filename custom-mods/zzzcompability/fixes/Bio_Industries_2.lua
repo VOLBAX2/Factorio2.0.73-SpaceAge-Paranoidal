@@ -5,7 +5,8 @@ local function FixBiSand()
 	Assert(data.raw ~= nil and data.raw.recipe ~= nil, "Expected data.raw.recipe but it is nil")
 
 	local recipe = data.raw.recipe["bi-sand"]
-	if type(recipe) ~= "table" then return end
+	Assert.AssertOutdated(type(recipe) == "table", "Recipe bi-sand not found.")
+	Assert.AssertOutdated(type(recipe.result) == "string", "Recipe bi-sand not contain result as string section.")
 
 	local amount = 5
 	local newName = "angels-solid-sand"
