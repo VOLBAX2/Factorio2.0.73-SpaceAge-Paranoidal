@@ -321,5 +321,89 @@ data:extend({
 		},
 		allow_decomposition = false,
 	},
-})
+}
+)
 
+-- Rubyte smelting recipes
+data:extend(
+{
+  {
+    type = "recipe",
+    name = "angels-ore5-crushed-smelting",
+    category = "smelting",
+    subgroup = "bob-material-smelting",
+    energy_required = 3.2,
+    enabled = true,
+    ingredients = { { type = "item", name = "angels-ore5-crushed", amount = 1 } },
+    results = {
+      {type = "item", name = "bob-lead-plate", amount = 1}
+    },
+    icons = {
+      {icon = "__bobplates__/graphics/icons/plate/lead-plate.png", icon_size = 32},
+      {icon = "__angelsrefininggraphics__/graphics/icons/angels-ore5/angels-ore5-crushed.png", icon_size = 32, scale = 0.5, shift = {-10, -10}}
+    },
+    order = "b-a",
+    allow_decomposition = false
+  },
+  {
+    type = "recipe",
+    name = "angels-ore5-smelting",
+    category = "smelting",
+    subgroup = "bob-material-smelting",
+    energy_required = 3.2,
+    enabled = true,
+    ingredients = { { type = "item", name = "angels-ore5", amount = 1 } },
+    results = {
+      {type = "item", name = "bob-lead-plate", amount = 1}
+    },
+    icons = {
+      {icon = "__bobplates__/graphics/icons/plate/lead-plate.png", icon_size = 32},
+      {icon = "__angelsrefininggraphics__/graphics/icons/angels-ore5/angels-ore5.png", icon_size = 32, scale = 0.5, shift = {-10, -10}}
+    },
+    order = "b-b",
+    allow_decomposition = false
+  },
+}
+)
+
+-- Bobmonium smelting recipes
+data:extend(
+{
+  {
+    type = "recipe",
+    name = "angels-ore6-crushed-smelting",
+    category = "smelting",
+    subgroup = "bob-material-smelting",
+    energy_required = 3.2,
+    enabled = true,
+    ingredients = { { type = "item", name = "angels-ore6-crushed", amount = 1 } },
+    results = {
+      {type = "item", name = "bob-tin-plate", amount = 1}
+    },
+    icons = {
+      {icon = "__bobplates__/graphics/icons/plate/tin-plate.png", icon_size = 32},
+      {icon = "__angelsrefininggraphics__/graphics/icons/angels-ore6/angels-ore6-crushed.png", icon_size = 32, scale = 0.5, shift = {-10, -10}}
+    },
+    order = "b-c",
+    allow_decomposition = false
+  },
+  {
+    type = "recipe",
+    name = "angels-ore6-smelting",
+    category = "smelting",
+    subgroup = "bob-material-smelting",
+    energy_required = 3.2,
+    enabled = true,
+    ingredients = { { type = "item", name = "angels-ore6", amount = 1 } },
+    results = {
+      {type = "item", name = "bob-tin-plate", amount = 1}
+    },
+    icons = {
+      {icon = "__bobplates__/graphics/icons/plate/tin-plate.png", icon_size = 32},
+      {icon = "__angelsrefininggraphics__/graphics/icons/angels-ore6/angels-ore6.png", icon_size = 32, scale = 0.5, shift = {-10, -10}}
+    },
+    order = "b-d",
+    allow_decomposition = false
+  },
+}
+)

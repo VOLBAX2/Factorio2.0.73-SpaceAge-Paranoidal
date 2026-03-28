@@ -70,5 +70,101 @@ require("tweaks.custom.uniform-recipies")
 -- final aplying of override functions
 angelsmods.functions.OV.execute()
 
+-- ============================================================
+-- ПРЯМЕ ВИПРАВЛЕННЯ РЕЦЕПТІВ ПЛАВКИ (після OV.execute)
+-- Аналог iron-plate→ore1-crushed та copper-plate→ore3-crushed
+-- ============================================================
+
+-- bob-lead-plate: замінюємо bob-lead-ore на angels-ore5-crushed (Rubyte)
+log("[NEXUS-UA] Starting bob-lead-plate fix, recipe exists: "..tostring(data.raw.recipe["bob-lead-plate"] ~= nil))
+if data.raw.recipe["bob-lead-plate"] then
+    local r = data.raw.recipe["bob-lead-plate"]
+    log("[NEXUS-UA] bob-lead-plate BEFORE: enabled="..tostring(r.enabled).." hidden="..tostring(r.hidden).." ings="..tostring(#(r.ingredients or {})))
+    r.enabled = true
+    r.hidden = false
+    r.category = "smelting"
+    r.localised_name = nil
+    r.energy_required = 20
+    r.ingredients = { { type = "item", name = "angels-ore5-crushed", amount = 7 } }
+    r.results = {
+        { type = "item", name = "bob-lead-plate", amount = 4 },
+        { type = "item", name = "angels-slag", amount = 1 },
+    }
+    r.icon = "__angelssmeltinggraphics__/graphics/icons/plate-lead.png"
+    r.icon_size = 32
+    r.icons = nil
+    log("[NEXUS-UA] bob-lead-plate set icon path: __angelssmeltinggraphics__/graphics/icons/plate-lead.png")
+    -- Видалити з локів технологій
+    for _, tech in pairs(data.raw.technology) do
+        if tech.effects then
+            for i = #tech.effects, 1, -1 do
+                if tech.effects[i].type == "unlock-recipe" and tech.effects[i].recipe == "bob-lead-plate" then
+                    table.remove(tech.effects, i)
+                end
+            end
+        end
+    end
+end
+
+-- bob-tin-plate: замінюємо bob-tin-ore на angels-ore6-crushed (Bobmonium)
+if data.raw.recipe["bob-tin-plate"] then
+    local r = data.raw.recipe["bob-tin-plate"]
+    r.enabled = true
+    r.hidden = false
+    r.category = "smelting"
+    r.localised_name = nil
+    r.energy_required = 20
+    r.ingredients = { { type = "item", name = "angels-ore6-crushed", amount = 7 } }
+    r.results = {
+        { type = "item", name = "bob-tin-plate", amount = 4 },
+        { type = "item", name = "angels-slag", amount = 1 },
+    }
+    r.icons = {
+        { icon = "__bobplates__/graphics/icons/plate/tin-plate.png", icon_size = 32 }
+    }
+    r.icon = nil
+    r.icon_size = 32
+    log("[NEXUS-UA] bob-tin-plate set icon path: __bobplates__/graphics/icons/plate/tin-plate.png")
+    for _, tech in pairs(data.raw.technology) do
+        if tech.effects then
+            for i = #tech.effects, 1, -1 do
+                if tech.effects[i].type == "unlock-recipe" and tech.effects[i].recipe == "bob-tin-plate" then
+                    table.remove(tech.effects, i)
+                end
+            end
+        end
+    end
+end
+
+-- Відключити примітивні raw-ore рецепти (дублюють кращі crushed-ore варіанти)
+-- angels-ore5-smelting: 1x Rubyte ore → 1x Lead plate (замінено на bob-lead-plate: 7x Crushed → 4x)
+if data.raw.recipe["angels-ore5-smelting"] then
+    data.raw.recipe["angels-ore5-smelting"].enabled = false
+    data.raw.recipe["angels-ore5-smelting"].hidden = true
+    log("[NEXUS-UA] angels-ore5-smelting: DISABLED + HIDDEN (replaced by bob-lead-plate)")
+end
+
+-- angels-ore6-smelting: 1x Bobmonium ore → 1x Tin plate (замінено на bob-tin-plate: 7x Crushed → 4x)
+if data.raw.recipe["angels-ore6-smelting"] then
+    data.raw.recipe["angels-ore6-smelting"].enabled = false
+    data.raw.recipe["angels-ore6-smelting"].hidden = true
+    log("[NEXUS-UA] angels-ore6-smelting: DISABLED + HIDDEN (replaced by bob-tin-plate)")
+end
+
+-- Залишити bob-lead-plate-2 доступним (хімічна піч)
+if data.raw.recipe["bob-lead-plate-2"] then
+    local r = data.raw.recipe["bob-lead-plate-2"]
+    r.enabled = true
+    r.hidden = false
+    r.localised_name = nil
+    r.icons = {
+        { icon = "__bobplates__/graphics/icons/plate/lead-plate.png", icon_size = 32 }
+    }
+    r.icon = nil
+    r.icon_size = 32
+    log("[NEXUS-UA] bob-lead-plate-2 set icon path: __bobplates__/graphics/icons/plate/lead-plate.png")
+end
+
+
 --должно быть последним. После всех рецептов.
 require("tweaks.custom.flowfix")
